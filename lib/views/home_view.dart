@@ -22,7 +22,7 @@ class _HomeViewState extends State<HomeView> {
           children: [
             SizedBox(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height * .3,
+              height: MediaQuery.of(context).size.height * .35,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
@@ -36,23 +36,39 @@ class _HomeViewState extends State<HomeView> {
                               .headlineMedium!
                               .copyWith(
                                 color: Theme.of(context).colorScheme.tertiary,
+                                fontWeight: FontWeight.bold,
                               ),
                         ),
-                        Spacer(),
-                        IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.account_circle_rounded,
-                            size: 40,
-                            color: Theme.of(context).colorScheme.tertiary,
+                        const Spacer(),
+                        CircleAvatar(
+                          backgroundColor: Theme.of(context)
+                              .colorScheme
+                              .secondary
+                              .withOpacity(.5),
+                          child: Text(
+                            'S',
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyLarge!
+                                .copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onSecondary,
+                                ),
                           ),
                         )
                       ],
                     ),
+                    const SizedBox(height: 15),
                     TextField(
                       controller: _searchCtrl,
                       decoration: InputDecoration(
                         hintText: "eg: 6 / Day 6 / Leap Year Check",
+                        hintStyle: Theme.of(context)
+                            .textTheme
+                            .bodyLarge!
+                            .copyWith(
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
                         filled: true,
                         fillColor: Theme.of(context)
                             .colorScheme
@@ -62,7 +78,10 @@ class _HomeViewState extends State<HomeView> {
                           borderRadius: BorderRadius.circular(8),
                           borderSide: BorderSide.none,
                         ),
-                        prefixIcon: const Icon(Icons.search),
+                        prefixIcon: Icon(
+                          Icons.search,
+                          color: Theme.of(context).colorScheme.onSecondary,
+                        ),
                       ),
                     ),
                     Expanded(
@@ -89,8 +108,14 @@ class _HomeViewState extends State<HomeView> {
                               child: Center(
                                 child: Text(
                                   "Start",
-                                  style:
-                                      Theme.of(context).textTheme.headlineSmall,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .headlineSmall!
+                                      .copyWith(
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .onSecondary,
+                                      ),
                                 ),
                               ),
                             ),
@@ -153,13 +178,26 @@ class _HomeViewState extends State<HomeView> {
                       ),
                     ],
                   ),
-                  title: Text('Day ${data!["${index + 1}"]['id']}'),
-                  subtitle: Text(data["${index + 1}"]['title']),
+                  title: Text(
+                    'Day ${data!["${index + 1}"]['id']}',
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onSecondary,
+                        ),
+                  ),
+                  subtitle: Text(
+                    data["${index + 1}"]['title'],
+                    style: Theme.of(context).textTheme.labelLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.onSecondary,
+                        ),
+                  ),
                   isThreeLine: true,
-                  leading: const Column(
+                  leading: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Icon(Icons.lock_outline),
+                      Icon(
+                        Icons.lock_outline,
+                        color: Theme.of(context).colorScheme.onSecondary,
+                      ),
                     ],
                   ),
                   onTap: () {},

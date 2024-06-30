@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ThemeDataConstant {
-  Color primayColor = Colors.orange;
-  Color secondaryColor = Colors.white;
-  Color tertiaryColor = Colors.black;
+  Color primayColor = const Color(0xffFF7D29);
+  Color secondaryColor =
+      const Color(0xffFFFAFA); // Snow (#FFFAFA): Softly Radiant
+  Color tertiaryColor =
+      const Color(0xff101720); // Midnight Blue (#101720): Cool and Calm
 
   ThemeData getLightTheme(context) {
     ThemeData lightTheme = ThemeData(
@@ -20,8 +22,9 @@ class ThemeDataConstant {
             tertiary: tertiaryColor,
             onTertiary: primayColor,
           ),
-      textTheme:
-          GoogleFonts.signikaNegativeTextTheme(Theme.of(context).textTheme),
+      textTheme: GoogleFonts.signikaNegativeTextTheme(
+        Theme.of(context).textTheme,
+      ),
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           backgroundColor: WidgetStatePropertyAll(secondaryColor),
@@ -47,6 +50,11 @@ class ThemeDataConstant {
           ),
       textTheme: GoogleFonts.signikaNegativeTextTheme(
         Theme.of(context).textTheme,
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: ButtonStyle(
+          backgroundColor: WidgetStatePropertyAll(secondaryColor),
+        ),
       ),
     );
     return darkTheme;
