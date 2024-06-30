@@ -3,103 +3,171 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   const HomeView({super.key});
+
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
+  final TextEditingController _searchCtrl = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.primary,
       body: SafeArea(
         child: ListView(
           children: [
-            const SizedBox(height: 10),
-            const Center(
-              child: Text(
-                "( Drag down to refresh )",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 8,
-                ),
-              ),
-            ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.3,
-              child: const Center(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * .3,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Total Task Completed",
-                      style: TextStyle(color: Colors.grey),
+                    Row(
+                      children: [
+                        Text(
+                          "Hi, Sanjay RB!",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineMedium!
+                              .copyWith(
+                                color: Theme.of(context).colorScheme.tertiary,
+                              ),
+                        ),
+                        Spacer(),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.account_circle_rounded,
+                            size: 40,
+                            color: Theme.of(context).colorScheme.tertiary,
+                          ),
+                        )
+                      ],
                     ),
-                    Text(
-                      "10/100",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 35,
+                    TextField(
+                      controller: _searchCtrl,
+                      decoration: InputDecoration(
+                        hintText: "eg: 6 / Day 6 / Leap Year Check",
+                        filled: true,
+                        fillColor: Theme.of(context)
+                            .colorScheme
+                            .secondary
+                            .withOpacity(.5),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8),
+                          borderSide: BorderSide.none,
+                        ),
+                        prefixIcon: const Icon(Icons.search),
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "1/100",
+                            style: Theme.of(context)
+                                .textTheme
+                                .displayLarge!
+                                .copyWith(
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
+                                ),
+                          ),
+                          const SizedBox(height: 20),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width * .40,
+                            height: 40,
+                            child: Material(
+                              color: Theme.of(context).colorScheme.secondary,
+                              borderRadius: BorderRadius.circular(8),
+                              child: Center(
+                                child: Text(
+                                  "Start",
+                                  style:
+                                      Theme.of(context).textTheme.headlineSmall,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            FutureBuilder<Map>(
-                future: readJson(),
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return Container();
-                  }
-                  Map? data = snapshot.data;
-                  return Column(
-                    children: List.generate(
-                      100,
-                      (index) => Dismissible(
-                        background: Container(
-                          color: Colors.blue,
-                          padding: const EdgeInsets.all(10),
-                          alignment: Alignment.centerRight,
-                          child: const Icon(
-                            Icons.navigate_next,
-                            color: Colors.white,
-                          ),
-                        ),
-                        direction: DismissDirection.endToStart,
-                        confirmDismiss: (direction) async {
-                          if (direction == DismissDirection.endToStart) {
-                            return false; // Prevent dismissing for the update action
-                          }
-                          return true;
-                        },
-                        key: ValueKey(index + 1),
-                        child: ListTile(
-                          trailing: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "🔴", // 🟢
-                              ),
-                            ],
-                          ),
-                          title: Text('Day ${data!["${index + 1}"]['id']}'),
-                          subtitle: Text(data["${index + 1}"]['title']),
-                          isThreeLine: true,
-                          leading: const Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.lock_outline),
-                            ],
-                          ),
-                          onTap: () {},
-                        ),
-                      ),
-                    ).toList(),
-                  );
-                }),
+            Card(
+              color: Theme.of(context).colorScheme.secondary,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: listView(),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  FutureBuilder<Map<dynamic, dynamic>> listView() {
+    return FutureBuilder<Map>(
+        future: readJson(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Container();
+          }
+          Map? data = snapshot.data;
+          return Column(
+            children: List.generate(
+              100,
+              (index) => Dismissible(
+                background: Container(
+                  color: Colors.blue,
+                  padding: const EdgeInsets.all(10),
+                  alignment: Alignment.centerRight,
+                  child: const Icon(
+                    Icons.navigate_next,
+                    color: Colors.white,
+                  ),
+                ),
+                direction: DismissDirection.endToStart,
+                confirmDismiss: (direction) async {
+                  if (direction == DismissDirection.endToStart) {
+                    return false; // Prevent dismissing for the update action
+                  }
+                  return true;
+                },
+                key: ValueKey(index + 1),
+                child: ListTile(
+                  trailing: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "🔴", // 🟢
+                      ),
+                    ],
+                  ),
+                  title: Text('Day ${data!["${index + 1}"]['id']}'),
+                  subtitle: Text(data["${index + 1}"]['title']),
+                  isThreeLine: true,
+                  leading: const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.lock_outline),
+                    ],
+                  ),
+                  onTap: () {},
+                ),
+              ),
+            ).toList(),
+          );
+        });
   }
 }
 

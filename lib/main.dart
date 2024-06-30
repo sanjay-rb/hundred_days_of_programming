@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:hundred_days_of_programming/constants/theme_data_constant.dart';
 import 'package:hundred_days_of_programming/views/home_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -40,12 +40,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: '100 Days of Programming',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-        textTheme: GoogleFonts.signikaNegativeTextTheme(
-          Theme.of(context).textTheme,
-        ),
-      ),
+      theme: ThemeDataConstant().getLightTheme(context),
+      darkTheme: ThemeDataConstant().getDarkTheme(context),
+      themeMode: ThemeMode.light,
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
       ],
