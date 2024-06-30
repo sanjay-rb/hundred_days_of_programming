@@ -1,0 +1,1549 @@
+{
+    "tasks": {
+        "task001": {
+            "title": "Day 1 - Adding Two Numbers",
+            "day": 1,
+            "description": [
+                "Create a program in any language to add two numbers and display the result."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber1: 5\nNumber2: 3\nSum: 8\n```\n\n",
+                "### TestCase 2:\n```\nNumber1: 6\nNumber2: 4\nSum: 10\n```\n\n",
+                "### TestCase 3:\n```\nNumber1: -10\nNumber2: 3\nSum: -7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task002": {
+            "title": "Day 2 - Calculating the Area and Circumference of a Circle",
+            "day": 2,
+            "description": [
+                "Create a program in any language to calculate the area and circumference of a circle given its radius. Use the formulas:",
+                "Area = \u03c0 * radius^2",
+                "Circumference = 2 * \u03c0 * radius"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nRadius: 5\nArea: 78.54\nCircumference: 31.42\n```\n\n",
+                "### TestCase 2:\n```\nRadius: 10\nArea: 314.16\nCircumference: 62.83\n```\n\n",
+                "### TestCase 3:\n```\nRadius: 2.5\nArea: 19.63\nCircumference: 15.71\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task003": {
+            "title": "Day 3 - Multiplication and Division",
+            "day": 3,
+            "description": [
+                "Create a program in any language to perform multiplication and division of two numbers and display the results."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber1: 5\nNumber2: 3\nProduct: 15\nDivision Result: 1.67\n```\n",
+                "### TestCase 2:\n```\nNumber1: 6\nNumber2: 4\nProduct: 24\nDivision Result: 1.5\n```\n",
+                "### TestCase 3:\n```\nNumber1: -10\nNumber2: 3\nProduct: -30\nDivision Result: -3.33\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task004": {
+            "title": "Day 4 - Swapping of 2 Numbers",
+            "day": 4,
+            "description": [
+                "Create a program in any language to swap the values of two variables and display the swapped values."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInitial values:\nNumber1: 5\nNumber2: 3\nAfter swapping:\nNumber1: 3\nNumber2: 5\n```\n",
+                "### TestCase 2:\n```\nInitial values:\nNumber1: 10\nNumber2: 20\nAfter swapping:\nNumber1: 20\nNumber2: 10\n```\n",
+                "### TestCase 3:\n```\nInitial values:\nNumber1: -7\nNumber2: -3\nAfter swapping:\nNumber1: -3\nNumber2: -7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task005": {
+            "title": "Day 5 - Area of Triangle",
+            "day": 5,
+            "description": [
+                "Create a program in any language to calculate the area of a triangle given its base and height. Use the formula:",
+                "Area = 0.5 * base * height"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nBase: 5\nHeight: 3\nArea: 7.5\n```\n\n",
+                "### TestCase 2:\n```\nBase: 10\nHeight: 8\nArea: 40.0\n```\n\n",
+                "### TestCase 3:\n```\nBase: 7.5\nHeight: 4\nArea: 15.0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task006": {
+            "title": "Day 6 - Leap Year Check",
+            "day": 6,
+            "description": [
+                "Create a program in any language to check if a given year is a leap year. A leap year is:",
+                "Divisible by 4,",
+                "Not divisible by 100 unless also divisible by 400."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nYear: 2020\nLeap Year: Yes\n```\n\n",
+                "### TestCase 2:\n```\nYear: 2021\nLeap Year: No\n```\n\n",
+                "### TestCase 3:\n```\nYear: 2000\nLeap Year: Yes\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task007": {
+            "title": "Day 7 - Surface Area and Volume of a Cube",
+            "day": 7,
+            "description": [
+                "Create a program in any language to calculate the surface area and volume of a cube given its side length. Use the formulas:",
+                "Surface Area = 6 * side^2",
+                "Volume = side^3"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nSide Length: 5\nSurface Area: 150\nVolume: 125\n```\n\n",
+                "### TestCase 2:\n```\nSide Length: 10\nSurface Area: 600\nVolume: 1000\n```\n\n",
+                "### TestCase 3:\n```\nSide Length: 2.5\nSurface Area: 37.5\nVolume: 15.625\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task008": {
+            "title": "Day 8 - Prime Number Check",
+            "day": 8,
+            "description": [
+                "Create a program in any language to check if a given number is a prime number. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber: 7\nPrime: Yes\n```\n\n",
+                "### TestCase 2:\n```\nNumber: 12\nPrime: No\n```\n\n",
+                "### TestCase 3:\n```\nNumber: 23\nPrime: Yes\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task009": {
+            "title": "Day 9 - Sum and Average",
+            "day": 9,
+            "description": [
+                "Create a program in any language to calculate the sum and average of a list of numbers."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumbers: [5, 3, 8, 12, 7]\nSum: 35\nAverage: 7.0\n```\n\n",
+                "### TestCase 2:\n```\nNumbers: [10, 20, 30, 40]\nSum: 100\nAverage: 25.0\n```\n\n",
+                "### TestCase 3:\n```\nNumbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nSum: 55\nAverage: 5.5\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task010": {
+            "title": "Day 10 - Amicable Pair Check",
+            "day": 10,
+            "description": [
+                "Create a program in any language to check if two given numbers form an amicable pair. Amicable pairs are two different numbers such that the sum of the proper divisors (excluding the number itself) of each number is equal to the other number.",
+                "For example, one of the smallest pairs of amicable numbers is (220, 284):",
+                "The proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, and 110, which sum up to 284.",
+                "The proper divisors of 284 are 1, 2, 4, 71, and 142, which sum up to 220.",
+                "To check if a pair of numbers is amicable, you need to compute the sum of proper divisors for each number and verify if they match the definition above."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber1: 220\nNumber2: 284\nAmicable Pair: Yes\n```\n\n",
+                "### TestCase 2:\n```\nNumber1: 1184\nNumber2: 1210\nAmicable Pair: Yes\n```\n\n",
+                "### TestCase 3:\n```\nNumber1: 220\nNumber2: 221\nAmicable Pair: No\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task011": {
+            "title": "Day 11 - Count Vowels in a String",
+            "day": 11,
+            "description": [
+                "Create a program in any language to count the number of vowels (a, e, i, o, u) in a given string."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nString: \"Hello World\"\nNumber of Vowels: 3\n```\n\n",
+                "### TestCase 2:\n```\nString: \"Python Programming\"\nNumber of Vowels: 4\n```\n\n",
+                "### TestCase 3:\n```\nString: \"The quick brown fox jumps over the lazy dog\"\nNumber of Vowels: 11\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task012": {
+            "title": "Day 12 - Finding ASCII Value of a Character",
+            "day": 12,
+            "description": [
+                "Create a program in any language to find and display the ASCII value of a given character."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nCharacter: A\nASCII Value: 65\n```\n\n",
+                "### TestCase 2:\n```\nCharacter: a\nASCII Value: 97\n```\n\n",
+                "### TestCase 3:\n```\nCharacter: @\nASCII Value: 64\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task013": {
+            "title": "Day 13 - Vowel and Consonant Check",
+            "day": 13,
+            "description": [
+                "Create a program in any language to check if a given character is a vowel or a consonant. Vowels are 'a', 'e', 'i', 'o', 'u' (both uppercase and lowercase), and all other alphabetic characters are consonants."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nCharacter: A\nResult: Vowel\n```\n\n",
+                "### TestCase 2:\n```\nCharacter: b\nResult: Consonant\n```\n\n",
+                "### TestCase 3:\n```\nCharacter: O\nResult: Vowel\n```\n\n",
+                "### TestCase 4:\n```\nCharacter: Z\nResult: Consonant\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task014": {
+            "title": "Day 14 - Distance Between Two Points",
+            "day": 14,
+            "description": [
+                "Create a program in any language to calculate the distance between two points in a 2D plane. Use the distance formula:",
+                "Distance = \u221a((x2 - x1)\u00b2 + (y2 - y1)\u00b2)"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nPoint1: (3, 4)\nPoint2: (0, 0)\nDistance: 5.0\n```\n\n",
+                "### TestCase 2:\n```\nPoint1: (1, 2)\nPoint2: (4, 6)\nDistance: 5.0\n```\n\n",
+                "### TestCase 3:\n```\nPoint1: (-1, -1)\nPoint2: (2, 3)\nDistance: 5.0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task015": {
+            "title": "Day 15 - JugsMugsPugs",
+            "day": 15,
+            "description": [
+                "Create a program in any language that receives a number as input and:"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput: 3\nOutput: Jugs\n```\n\n",
+                "### TestCase 2:\n```\nInput: 5\nOutput: Mugs\n```\n\n",
+                "### TestCase 3:\n```\nInput: 7\nOutput: Pugs\n```\n\n",
+                "### TestCase 4:\n```\nInput: 15\nOutput: JugsMugs\n```\n\n",
+                "### TestCase 5:\n```\nInput: 21\nOutput: JugsPugs\n```\n\n",
+                "### TestCase 6:\n```\nInput: 35\nOutput: MugsPugs\n```\n\n",
+                "### TestCase 7:\n```\nInput: 105\nOutput: JugsMugsPugs\n```\n\n",
+                "### TestCase 8:\n```\nInput: 8\nOutput: 8\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task016": {
+            "title": "Day 16 - Simple Date",
+            "day": 16,
+            "description": [
+                "Create a program to handle dates.",
+                "Accept the three date components (day, month, year) as integers through the keyboard.",
+                "Validate that the day is not more than 31 and the month is not more than 12.",
+                "Display the date details in MM-DD-YYYY format."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nDay: 25\nMonth: 12\nYear: 2021\nOutput: 12-25-2021\n```\n\n",
+                "### TestCase 2:\n```\nDay: 32\nMonth: 12\nYear: 2021\nOutput: Invalid day! Please enter a day between 1 and 31.\n```\n\n",
+                "### TestCase 3:\n```\nDay: 15\nMonth: 13\nYear: 2022\nOutput: Invalid month! Please enter a month between 1 and 12.\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task017": {
+            "title": "Day 17 - Simple Date-II",
+            "day": 17,
+            "description": [
+                "Create a program to accept three date components (DD, MM, YY) as integers through the keyboard.",
+                "Validate the date, month, and year to ensure the date is not more than 31, the month is not more than 12, and the year is in YY format.",
+                "Ask the user to choose the century since the year is in YY format (19th Century / 20th Century / 21st Century).",
+                "Ask the user to choose the format for the date display (MM-DD-YYYY / DD-MM-YYYY / YYYY-MM-DD)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter day (DD): 12\nEnter month (MM): 07\nEnter year (YY): 23\nChoose century: 21\nChoose date format: MM-DD-YYYY\nFormatted Date: 07-12-2023\n```\n\n",
+                "### TestCase 2:\n```\nEnter day (DD): 31\nEnter month (MM): 12\nEnter year (YY): 99\nChoose century: 20\nChoose date format: DD-MM-YYYY\nFormatted Date: 31-12-1999\n```\n\n",
+                "### TestCase 3:\n```\nEnter day (DD): 01\nEnter month (MM): 01\nEnter year (YY): 75\nChoose century: 19\nChoose date format: YYYY-MM-DD\nFormatted Date: 1875-01-01\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task018": {
+            "title": "Day 18 - Simple Date-III",
+            "day": 18,
+            "description": [
+                "Create a program to accept three date components (DD, MM, YY) as integers through the keyboard.",
+                "Validate the date, month, and year to ensure the date is not more than 31, the month is not more than 12, and the year is in YY format.",
+                "Ask the user to choose the century since the year is in YY format (19th Century / 20th Century / 21st Century).",
+                "Ask the user to choose the format for the date display (MM-DD-YYYY / DD-MM-YYYY / YYYY-MM-DD).",
+                "Ask the user to enter the number of days to add to the date, then print the resulting date considering increments in months and years (without considering leap years)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter day (DD): 15\nEnter month (MM): 07\nEnter year (YY): 23\nChoose century: 21\nChoose date format: MM-DD-YYYY\nEnter number of days to add: 20\nResulting Date: 08-04-2023\n```\n\n",
+                "### TestCase 2:\n```\nEnter day (DD): 25\nEnter month (MM): 12\nEnter year (YY): 99\nChoose century: 20\nChoose date format: DD-MM-YYYY\nEnter number of days to add: 10\nResulting Date: 04-01-2000\n```\n\n",
+                "### TestCase 3:\n```\nEnter day (DD): 01\nEnter month (MM): 01\nEnter year (YY): 75\nChoose century: 19\nChoose date format: YYYY-MM-DD\nEnter number of days to add: 365\nResulting Date: 1876-01-01\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task019": {
+            "title": "Day 19 - Simple Date-IV",
+            "day": 19,
+            "description": [
+                "Create a program to accept three date components (DD, MM, YY) as integers through the keyboard.",
+                "Validate the date, month, and year to ensure the date is not more than 31, the month is not more than 12, and the year is in YY format.",
+                "Ask the user to choose the century since the year is in YY format (19th Century / 20th Century / 21st Century).",
+                "Ask the user to choose the format for the date display (MM-DD-YYYY / DD-MM-YYYY / YYYY-MM-DD).",
+                "Ask the user to enter the number of days to add to the date, then print the resulting date considering increments in months and years, with consideration for leap years.",
+                "Provide a looping construct to iterate the add days process. Option 1 (Yes) continues to add days, Option 2 (No) quits the program."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter day (DD): 28\nEnter month (MM): 02\nEnter year (YY): 20\nChoose century: 21\nChoose date format (MM-DD-YYYY/DD-MM-YYYY/YYYY-MM-DD): YYYY-MM-DD\nEnter number of days to add: 400\nResulting Date: 2021-04-05\n\nContinue adding days? (1/2): 1\n\nEnter day (DD): 31\nEnter month (MM): 12\nEnter year (YY): 99\nChoose century: 20\nChoose date format (MM-DD-YYYY/DD-MM-YYYY/YYYY-MM-DD): MM-DD-YYYY\nEnter number of days to add: 365\nResulting Date: 12-30-2000\n\nContinue adding days? (1/2): 2\n```\n\n",
+                "### TestCase 2:\n```\nEnter day (DD): 01\nEnter month (MM): 01\nEnter year (YY): 04\nChoose century: 20\nChoose date format (MM-DD-YYYY/DD-MM-YYYY/YYYY-MM-DD): DD-MM-YYYY\nEnter number of days to add: 730\nResulting Date: 01-01-2006\n\nContinue adding days? (1/2): 1\n\nEnter day (DD): 29\nEnter month (MM): 02\nEnter year (YY): 16\nChoose century: 21\nChoose date format (MM-DD-YYYY/DD-MM-YYYY/YYYY-MM-DD): YYYY-MM-DD\nEnter number of days to add: 366\nResulting Date: 2017-02-28\n\nContinue adding days? (1/2): 2\n```\n\n",
+                "### TestCase 3:\n```\nEnter day (DD): 15\nEnter month (MM): 11\nEnter year (YY): 85\nChoose century: 19\nChoose date format (MM-DD-YYYY/DD-MM-YYYY/YYYY-MM-DD): MM-DD-YYYY\nEnter number of days to add: 1000\nResulting Date: 09-11-1988\n\nContinue adding days? (1/2): 2\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task020": {
+            "title": "Day 20 - Prime Fibonacci Numbers",
+            "day": 20,
+            "description": [
+                "Create a program to generate Prime Fibonacci Numbers for a given range of Fibonacci series.",
+                "Exclude the first two Fibonacci numbers (0 and 1) from the sequence.",
+                "Implement logic to determine prime numbers and Fibonacci numbers separately, then find their intersection."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the range of Fibonacci numbers: 10\nPrime Fibonacci Numbers: [2, 3, 5, 13, 89]\n```\n\n",
+                "### TestCase 2:\n```\nEnter the range of Fibonacci numbers: 15\nPrime Fibonacci Numbers: [2, 3, 5, 13, 89, 233, 1597]\n```\n\n",
+                "### TestCase 3:\n```\nEnter the range of Fibonacci numbers: 20\nPrime Fibonacci Numbers: [2, 3, 5, 13, 89, 233, 1597, 28657]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task021": {
+            "title": "Day 21 - Output Generation-I",
+            "day": 21,
+            "description": [
+                "Create a program to generate the following output:",
+                "The numbers 1 to 9 must be printed by a loop.",
+                "In the first row, print 1 number, in the second row print 3 numbers, and in the third row print 5 numbers."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\n1 \n234 \n56789\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task022": {
+            "title": "Day 22 - Factorial using Recursion",
+            "day": 22,
+            "description": [
+                "Create a program to find the factorial of a given number using recursion.",
+                "Implement a user-defined function `find_fact(int)` that calls itself for factorial calculation."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter a number: 5\nFactorial of 5 is: 120\n```\n\n",
+                "### TestCase 2:\n```\nEnter a number: 6\nFactorial of 6 is: 720\n```\n\n",
+                "### TestCase 3:\n```\nEnter a number: 10\nFactorial of 10 is: 3628800\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task023": {
+            "title": "Day 23 - Output Generation-II",
+            "day": 23,
+            "description": [
+                "Create a program to generate the following output:",
+                "Each row must show 4 `$` symbols with a `*` diagonal (all separated by spaces)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\n* $ $ $ $ \n$ * $ $ $ \n$ $ * $ $ \n$ $ $ * $ \n$ $ $ $ *\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task024": {
+            "title": "Day 24 - Output Generation-III",
+            "day": 24,
+            "description": [
+                "Create a program to generate the following output:",
+                "Each loop iteration must show asterisks, where the first iteration shows 1 asterisk, the second shows 3 asterisks, the third shows 5 asterisks, and so on."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\n* \n*** \n***** \n******* \n*********\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task025": {
+            "title": "Day 25 - Output Generation-IV",
+            "day": 25,
+            "description": [
+                "Create a program to generate the following output:",
+                "The output consists of a 5x5 grid where most cells contain `#`, except for the center cell which contains `0`."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\n# # # # #\n# # # # #\n# # 0 # #\n# # # # #\n# # # # #\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task026": {
+            "title": "Day 26 - Array Traversal-I: Search an Element in an Array",
+            "day": 26,
+            "description": [
+                "Create a program to search for an element in an integer array.",
+                "Get the size of the array from the user.",
+                "Get the element to be searched from the user and traverse through the array elements to find if it exists."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\nElement to search: 3\nElement found at index: 3\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 7\nArray elements: 10 20 30 40 50 60 70\nElement to search: 55\nElement not found in the array.\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 1 3 5\nElement to search: 1\nElement found at index: 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task027": {
+            "title": "Day 27 - Array Traversal-II: Positive and Negative Numbers Separation",
+            "day": 27,
+            "description": [
+                "Create a program to separate positive and negative numbers using arrays.",
+                "Get the size of an array from the user for an integer array.",
+                "Ensure that at least 30% of the elements are negative numbers.",
+                "Display positive numbers and negative numbers separately in ascending order."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 10\nEnter array elements: 2 -5 8 -3 9 -1 0 -7 4 6\nPositive numbers: [0, 2, 4, 6, 8, 9]\nNegative numbers: [-7, -5, -3, -1]\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 8\nEnter array elements: 1 2 3 -4 -5 -6 7 -8\nPositive numbers: [1, 2, 3, 7]\nNegative numbers: [-8, -6, -5, -4]\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 12\nEnter array elements: -2 3 -4 5 -6 7 -8 9 -10 11 -12 13\nPositive numbers: [3, 5, 7, 9, 11, 13]\nNegative numbers: [-12, -10, -8, -6, -4, -2]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task028": {
+            "title": "Day 28 - Array Traversal-III",
+            "day": 28,
+            "description": [
+                "Create a program to perform various operations on an integer array using user-defined functions:"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 8\nEnter array elements: 5 10 2 8 15 7 3 12\nArray in ascending order: [2, 3, 5, 7, 8, 10, 12, 15]\nArray in descending order: [15, 12, 10, 8, 7, 5, 3, 2]\nSecond largest element: 12\nSecond smallest element: 3\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 6\nEnter array elements: 20 15 25 10 30 5\nArray in ascending order: [5, 10, 15, 20, 25, 30]\nArray in descending order: [30, 25, 20, 15, 10, 5]\nSecond largest element: 25\nSecond smallest element: 10\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 10\nEnter array elements: 8 12 5 20 3 15 10 7 18 1\nArray in ascending order: [1, 3, 5, 7, 8, 10, 12, 15, 18, 20]\nArray in descending order: [20, 18, 15, 12, 10, 8, 7, 5, 3, 1]\nSecond largest element: 18\nSecond smallest element: 3\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task029": {
+            "title": "Day 29 - Reverse a Text",
+            "day": 29,
+            "description": [
+                "Create a program to reverse a line of text using a recursive function.",
+                "Read a character array of meaningful data from the user and pass it to a recursive function.",
+                "Let the recursive function reverse the array by traversing through the array elements.",
+                "Finally, determine and mention the palindrome status of the reversed text."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter a line of text: hello\nReversed text: olleh\nPalindrome status: Not a palindrome\n```\n\n",
+                "### TestCase 2:\n```\nEnter a line of text: radar\nReversed text: radar\nPalindrome status: Palindrome\n```\n\n",
+                "### TestCase 3:\n```\nEnter a line of text: racecar\nReversed text: racecar\nPalindrome status: Palindrome\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task030": {
+            "title": "Day 30 - Array Traversal-IV",
+            "day": 30,
+            "description": [
+                "Create a program to print all unique elements in an array of integers.",
+                "Get the size of the array from the user.",
+                "Get the array elements from the user.",
+                "Traverse through the array elements to identify and print only the unique elements."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 8\nEnter array elements: 5 2 8 5 3 2 8 9\nUnique elements in the array: [5, 2, 8, 3, 9]\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 6\nEnter array elements: 10 20 10 30 20 40\nUnique elements in the array: [10, 20, 30, 40]\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 10\nEnter array elements: 1 2 3 4 5 1 2 3 4 5\nUnique elements in the array: [1, 2, 3, 4, 5]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task031": {
+            "title": "Day 31 - Array Traversal-V",
+            "day": 31,
+            "description": [
+                "Create a program to count the frequency of each element in an integer array.",
+                "Get the size of the array from the user.",
+                "Get the array elements from the user.",
+                "Traverse through the array elements and count how many times each element appears.",
+                "Display the frequency of each element in the array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 8\nEnter array elements: 5 2 8 5 3 2 8 9\nElement frequencies:\n2: 2\n5: 2\n8: 2\n3: 1\n9: 1\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 6\nEnter array elements: 10 20 10 30 20 40\nElement frequencies:\n10: 2\n20: 2\n30: 1\n40: 1\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 10\nEnter array elements: 1 2 3 4 5 1 2 3 4 5\nElement frequencies:\n1: 2\n2: 2\n3: 2\n4: 2\n5: 2\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task032": {
+            "title": "Day 32 - Array Traversal-VI",
+            "day": 32,
+            "description": [
+                "Create a program to find the sum of all elements in an integer array.",
+                "Get the size of the array from the user.",
+                "Get the array elements from the user.",
+                "Traverse through the array elements and calculate the sum of all elements.",
+                "Display the sum of all elements in the array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 5\nEnter array elements: 2 5 8 3 9\nSum of array elements: 27\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 7\nEnter array elements: 10 20 30 40 50 60 70\nSum of array elements: 280\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 3\nEnter array elements: 1 3 5\nSum of array elements: 9\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task033": {
+            "title": "Day 33 - Array Traversal-VII",
+            "day": 33,
+            "description": [
+                "Create a program to manipulate an integer array using a menu-driven approach with options to Insert, Delete, Display, and Exit.",
+                "Initialize an array based on user input size and elements.",
+                "Implement functionality to insert an element at a specified position, delete an element from a specified position, display the current state of the array, and exit the program."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 2\nEnter index to delete (0 to 4): 2\n\nArray elements after deletion: 2 5 3 9\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 1\nEnter index to insert (0 to 4): 2\nEnter element to insert: 7\n\nArray elements after insertion: 2 5 7 3 9\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 3\n\nArray elements: 2 5 7 3 9\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 4\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 3\nArray elements: 1 3 5\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 2\nEnter index to delete (0 to 2): 1\n\nArray elements after deletion: 1 5\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 1\nEnter index to insert (0 to 2): 2\nEnter element to insert: 4\n\nArray elements after insertion: 1 5 4\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 3\n\nArray elements: 1 5 4\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 4\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 7\nArray elements: 10 20 30 40 50 60 70\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 5\nInvalid choice! Please enter a valid option.\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 3\n\nArray elements: 10 20 30 40 50 60 70\n\nMenu:\n1. Insert\n2. Delete\n3. Display\n4. Exit\n\nEnter your choice: 4\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task034": {
+            "title": "Day 34 - Array Traversal-VIII",
+            "day": 34,
+            "description": [
+                "Create a program to categorize and sum prime numbers from odd and even positioned elements in an integer array.",
+                "Get the size of the array from the user.",
+                "Populate the array with integer elements.",
+                "Identify prime numbers (excluding 1) and categorize them based on their position (odd or even indexed).",
+                "Calculate the sum of prime numbers in odd and even positions separately and display the results."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\n\nPrime numbers at odd positions: 5\nPrime numbers at even positions: 2\nSum of prime numbers at odd positions: 5\nSum of prime numbers at even positions: 2\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 7\nArray elements: 10 20 30 40 50 60 70\n\nPrime numbers at odd positions: \nPrime numbers at even positions: \nSum of prime numbers at odd positions: 0\nSum of prime numbers at even positions: 0\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 1 3 5\n\nPrime numbers at odd positions: 5\nPrime numbers at even positions: \nSum of prime numbers at odd positions: 5\nSum of prime numbers at even positions: 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task035": {
+            "title": "Day 35 - Array Traversal-IX",
+            "day": 35,
+            "description": [
+                "Write a program to merge two arrays of the same size sorted in descending order. Ensure that both arrays have the same size before merging."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nEnter elements for array 1 (5 elements separated by space): 9 7 5 3 1\nEnter elements for array 2 (5 elements separated by space): 8 6 4 2 0\n\nMerged Array (sorted in descending order): 9 8 7 6 5 4 3 2 1 0\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 3\nEnter elements for array 1 (3 elements separated by space): 10 20 30\nEnter elements for array 2 (3 elements separated by space): 15 25 35\n\nMerged Array (sorted in descending order): 35 30 25 20 15 10\n```\n\n",
+                "### TestCase 3:\n```\nArray size for array 1: 4\nArray size for array 2: 3\nArrays must be of the same size.\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task036": {
+            "title": "Day 36 - Array Traversal-X",
+            "day": 36,
+            "description": [
+                "Write a program to insert a new value in an unsorted array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\nElement to insert: 6\n\nUpdated Array: 2 5 8 3 9 6\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 7\nArray elements: 10 20 30 40 50 60 70\nElement to insert: 35\n\nUpdated Array: 10 20 30 40 50 60 70 35\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 1 3 5\nElement to insert: 7\n\nUpdated Array: 1 3 5 7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task037": {
+            "title": "Day 37 - Array Traversal-XI",
+            "day": 37,
+            "description": [
+                "Write a program to insert a new value in a sorted array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 9 10\nElement to insert: 7\n\nUpdated Array: 2 5 7 8 9 10\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 7\nArray elements: 10 20 30 40 50 60 70\nElement to insert: 35\n\nUpdated Array: 10 20 30 35 40 50 60 70\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 1 3 5\nElement to insert: 4\n\nUpdated Array: 1 3 4 5\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task038": {
+            "title": "Day 38 - Sum of Digits",
+            "day": 38,
+            "description": [
+                "Write a program to accept either string/integer and find sum of digits in it",
+                "accept the input through keyboard",
+                "your logic should work for both string and integer",
+                "for string, substitute number equivalent for alphabets, 1 for a, 2 for b,\u2026.,26 for z",
+                "make sure the final output should be a single digit number-> 18767986->1+8+7+6+7+9+8+6->52->5+2-> 7"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput: 18767986\nSum of Digits: 7\n```\n\n",
+                "### TestCase 2:\n```\nInput: hello\nSum of Digits: 7\n```\n\n",
+                "### TestCase 3:\n```\nInput: 12345\nSum of Digits: 6\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task039": {
+            "title": "Day 39 - Output Generation-V",
+            "day": 39,
+            "description": [
+                "Write a program to Generate the following output",
+                "be conscious about number of spaces between asterisks"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput: 5\nOutput:\n*                  *\n* *              * *\n* * *          * * *\n* * * *      * * * *\n* * * * *  * * * * *\n* * * * *  * * * * *\n* * * *      * * * *\n* * *          * * *\n* *              * *\n*                  *\n```\n\n",
+                "### TestCase 2:\n```\nInput: 7\nOutput:\n*                          *\n* *                      * *\n* * *                  * * *\n* * * *              * * * *\n* * * * *          * * * * *\n* * * * * *      * * * * * *\n* * * * * * *  * * * * * * *\n* * * * * * *  * * * * * * *\n* * * * * *      * * * * * *\n* * * * *          * * * * *\n* * * *              * * * *\n* * *                  * * *\n* *                      * *\n*                          *\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task040": {
+            "title": "Day 40 - Output Generation-VI",
+            "day": 40,
+            "description": [
+                "Write a program to Generate the following output",
+                "be conscious about number of spaces between asterisks"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput: 5\nOutput:\n* * * * *  * * * * *\n* * * *      * * * *\n* * *          * * *\n* *              * *\n*                  *\n*                  *\n* *              * *\n* * *          * * *\n* * * *      * * * *\n* * * * *  * * * * *\n```\n\n",
+                "### TestCase 2:\n```\nInput: 6\nOutput:\n* * * * * *  * * * * * *\n* * * * *      * * * * *\n* * * *          * * * *\n* * *              * * *\n* *                  * *\n*                      *\n*                      *\n* *                  * *\n* * *              * * *\n* * * *          * * * *\n* * * * *      * * * * *\n* * * * * *  * * * * * *\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task041": {
+            "title": "Day 41 - Zero Sum Subarray",
+            "day": 41,
+            "description": [
+                "Write a program to find any subarray in an integer array that sums to zero, if such a subarray exists.",
+                "The program should prompt the user for the size of the array and its elements.",
+                "It should then identify and print any subarray whose sum equals zero.",
+                "Example: Array: [3, 4, -7, 3, 1, 3, 1, -4, -2, -2]",
+                "A subarray `[4, -7, 3]` sums to zero."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 8\nArray elements: 2 -3 1 6 -4 8 2 -1\nSubarray with zero sum: [-3, 1, 2]\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 6\nArray elements: 4 -2 3 -1 4 -3\nNo subarray with zero sum found.\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 10\nArray elements: 3 1 -7 5 -4 9 2 -5 -3 1\nSubarray with zero sum: [3, 1, -4]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task042": {
+            "title": "Day 42 - String Processing-I: Check Consecutive Letters",
+            "day": 42,
+            "description": [
+                "Write a program to check if the given string contains consecutive letters and each letter occurs exactly once.",
+                "Get the sequence of alphabets from the user through the console.",
+                "Output should specify if the sequence is consecutive and unique, following the format provided in the examples."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: abc\nOutput: Yes\n```\n\n",
+                "### TestCase 2:\n```\nInput string: abcd\nOutput: Yes\n```\n\n",
+                "### TestCase 3:\n```\nInput string: ace\nOutput: No\n```\n\n",
+                "### TestCase 4:\n```\nInput string: aabbcc\nOutput: No\n```\n\n",
+                "### TestCase 5:\n```\nInput string: cba\nOutput: Yes\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task043": {
+            "title": "Day 43 - String Processing-II: ASCII Values Summation of Vowels",
+            "day": 43,
+            "description": [
+                "Write a program to find the summation of ASCII values of vowels in the given string.",
+                "Get the sequence of alphabets from the user through the console.",
+                "Ensure the logic works for both uppercase and lowercase vowels."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: Hello World\nOutput: 453\n```\n\n",
+                "### TestCase 2:\n```\nInput string: Programming\nOutput: 222\n```\n\n",
+                "### TestCase 3:\n```\nInput string: ASCII\nOutput: 202\n```\n\n",
+                "### TestCase 4:\n```\nInput string: Education\nOutput: 617\n```\n\n",
+                "### TestCase 5:\n```\nInput string: XYZ\nOutput: 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task044": {
+            "title": "Day 44 - String Processing-III: Find Character Index in a String",
+            "day": 44,
+            "description": [
+                "Write a function in the program that returns the index where a character, c, occurs in a string, s.",
+                "The function returns -1 if c is not present in s.",
+                "Use array indexing to achieve this."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: Hello World\nCharacter to find: o\nOutput: 4\n```\n\n",
+                "### TestCase 2:\n```\nInput string: Python\nCharacter to find: z\nOutput: -1\n```\n\n",
+                "### TestCase 3:\n```\nInput string: Programming\nCharacter to find: r\nOutput: 1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task045": {
+            "title": "Day 45 - String Processing-IV: Find Character Index with Repetitive Characters",
+            "day": 45,
+            "description": [
+                "Write a function that returns the index where a character, c, occurs in a string, s.",
+                "The function should work for repetitive characters in the given string.",
+                "The function returns -1 if c is not present in s.",
+                "Use array indexing to achieve this."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the String\nHello World\nEnter the character you want to search\no\nThe character 'o' found in 2 index/indices 4,7\n```\n\n",
+                "### TestCase 2:\n```\nEnter the String\nPython\nEnter the character you want to search\nz\nThe character 'z' found in 0 index/indices -1\n```\n\n",
+                "### TestCase 3:\n```\nEnter the String\nProgramming\nEnter the character you want to search\ng\nThe character 'g' found in 2 index/indices 3,10\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task046": {
+            "title": "Day 46 - String Processing-V: Remove White Space and Punctuation",
+            "day": 46,
+            "description": [
+                "Write a program with a function that takes two strings, `s` and `t`, as arguments.",
+                "Copy string `s` into `t`, but remove all meaningless white space and punctuation.",
+                "Use array indexing to achieve this."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string s: Hello,              World!\nOutput string t: Hello World\n```\n\n",
+                "### TestCase 2:\n```\nInput string s: Python is         fun.\nOutput string t: Python is fun\n```\n\n",
+                "### TestCase 3:\n```\nInput string s: Let's code!\nOutput string t: Lets code\n```\n\n",
+                "### TestCase 4:\n```\nInput string s: This is  , a test.\nOutput string t: This is a test\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task047": {
+            "title": "Day 47 - String Processing-VI: Detect Presence of a Whole Word",
+            "day": 47,
+            "description": [
+                "Write a function that detects the presence of a whole word in a string.",
+                "The function should be case-insensitive.",
+                "The function returns `True` if the word is found and `False` if it is not."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: Hello World\nWord to find: world\nOutput: True\n```\n\n",
+                "### TestCase 2:\n```\nInput string: Python is fun\nWord to find: Java\nOutput: False\n```\n\n",
+                "### TestCase 3:\n```\nInput string: Welcome to the programming world.\nWord to find: programming\nOutput: True\n```\n\n",
+                "### TestCase 4:\n```\nInput string: This is a test.\nWord to find: tests\nOutput: False\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task048": {
+            "title": "Day 48 - String Processing-VII: Check Palindrome Ignoring White Spaces",
+            "day": 48,
+            "description": [
+                "Write a program to check if a string is a palindrome by ignoring all white spaces.",
+                "A string is considered a palindrome if it reads the same backward as forward when ignoring white spaces."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: A man a plan a canal Panama\nOutput: True\n```\n\n",
+                "### TestCase 2:\n```\nInput string: race car\nOutput: True\n```\n\n",
+                "### TestCase 3:\n```\nInput string: hello world\nOutput: False\n```\n\n",
+                "### TestCase 4:\n```\nInput string: never odd or even\nOutput: True\n```\n\n",
+                "### TestCase 5:\n```\nInput string: palindrome\nOutput: False\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task049": {
+            "title": "Day 49 - Bubble Sort",
+            "day": 49,
+            "description": [
+                "Write a program to implement the Bubble Sort algorithm.",
+                "Get the size of the array from the user.",
+                "Get the elements of the array from the user.",
+                "Sort the array using the Bubble Sort algorithm."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 5 2 9 1 5\nSorted array: 1 2 5 5 9\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 7\nArray elements: 64 34 25 12 22 11 90\nSorted array: 11 12 22 25 34 64 90\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 3 2 1\nSorted array: 1 2 3\n```\n\n",
+                "### TestCase 4:\n```\nArray size: 4\nArray elements: 8 4 2 9\nSorted array: 2 4 8 9\n```\n\n",
+                "### TestCase 5:\n```\nArray size: 6\nArray elements: 12 45 23 1 56 3\nSorted array: 1 3 12 23 45 56\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task050": {
+            "title": "Day 50 - 2D Array-I: Sum of All Elements in a Matrix",
+            "day": 50,
+            "description": [
+                "Write a program to calculate the sum of all the elements in a matrix.",
+                "Get the number of rows and columns from the user.",
+                "Get the matrix elements from the user."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber of rows: 2\nNumber of columns: 3\nMatrix elements:\n1 2 3\n4 5 6\nSum of all elements: 21\n```\n\n",
+                "### TestCase 2:\n```\nNumber of rows: 3\nNumber of columns: 3\nMatrix elements:\n1 1 1\n1 1 1\n1 1 1\nSum of all elements: 9\n```\n\n",
+                "### TestCase 3:\n```\nNumber of rows: 2\nNumber of columns: 2\nMatrix elements:\n2 3\n4 5\nSum of all elements: 14\n```\n\n",
+                "### TestCase 4:\n```\nNumber of rows: 3\nNumber of columns: 2\nMatrix elements:\n1 2\n3 4\n5 6\nSum of all elements: 21\n```\n\n",
+                "### TestCase 5:\n```\nNumber of rows: 1\nNumber of columns: 4\nMatrix elements:\n7 8 9 10\nSum of all elements: 34\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task051": {
+            "title": "Day 51 - 2D Array-II: Extract and Sum Diagonal Elements in an NxN Matrix",
+            "day": 51,
+            "description": [
+                "Write a program to extract the diagonal elements from an NxN matrix and sum them.",
+                "Assume the matrix is square (NxN).",
+                "Get the size of the matrix (N) from the user.",
+                "Get the matrix elements from the user."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMatrix size (N): 3\nMatrix elements:\n1 2 3\n4 5 6\n7 8 9\nSum of diagonal elements: 15\n```\n\n",
+                "### TestCase 2:\n```\nMatrix size (N): 4\nMatrix elements:\n1  2  3  4\n5  6  7  8\n9  10 11 12\n13 14 15 16\nSum of diagonal elements: 34\n```\n\n",
+                "### TestCase 3:\n```\nMatrix size (N): 2\nMatrix elements:\n1 2\n3 4\nSum of diagonal elements: 5\n```\n\n",
+                "### TestCase 4:\n```\nMatrix size (N): 5\nMatrix elements:\n1 0 0 0 0\n0 2 0 0 0\n0 0 3 0 0\n0 0 0 4 0\n0 0 0 0 5\nSum of diagonal elements: 15\n```\n\n",
+                "### TestCase 5:\n```\nMatrix size (N): 3\nMatrix elements:\n1 0 0\n0 0 0\n0 0 1\nSum of diagonal elements: 2\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task052": {
+            "title": "Day 52 - 2D Array-III: Interchange Main and Secondary Diagonal Elements in a 3x3 Matrix",
+            "day": 52,
+            "description": [
+                "Write a program to interchange the main diagonal elements with the secondary diagonal elements in a 3x3 matrix.",
+                "The main diagonal elements are those where row index equals column index.",
+                "The secondary diagonal elements are those where row index + column index equals (N - 1)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMatrix elements:\n1 2 3\n4 5 6\n7 8 9\nInterchanged matrix:\n3 2 1\n4 5 6\n9 8 7\n```\n\n",
+                "### TestCase 2:\n```\nMatrix elements:\n7 8 9\n4 5 6\n1 2 3\nInterchanged matrix:\n9 8 7\n4 5 6\n3 2 1\n```\n\n",
+                "### TestCase 3:\n```\nMatrix elements:\n9 8 7\n6 5 4\n3 2 1\nInterchanged matrix:\n7 8 9\n6 5 4\n1 2 3\n```\n\n",
+                "### TestCase 4:\n```\nMatrix elements:\n1 0 0\n0 1 0\n0 0 1\nInterchanged matrix:\n1 0 0\n0 1 0\n0 0 1\n```\n\n",
+                "### TestCase 5:\n```\nMatrix elements:\n5  6  7\n8  9  10\n11 12 13\nInterchanged matrix:\n7  6  5\n8  9  10\n13 12 11\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task053": {
+            "title": "Day 53 - 2D Array-IV: Sparse Matrix Check",
+            "day": 53,
+            "description": [
+                "Write a program to check whether a matrix is a sparse matrix or not.",
+                "Sparse matrix is a special matrix with most of its elements are zero.",
+                "A sparse matrix is defined as a matrix where the number of zero elements (T) is greater than or equal to half of the total elements (m * n), where m is the number of rows and n is the number of columns.",
+                "ie, The matrix is sparse matrix if T \u2265 ((m * n) / 2 ); where T defines total number of zero elements, m - no. of rows and n - no. of columns.",
+                "Get the number of rows and columns from the user.",
+                "Read the matrix elements from the user.",
+                "Determine if the matrix qualifies as sparse based on the given condition."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber of rows: 3\nNumber of columns: 3\nMatrix elements:\n1 0 0\n0 0 0\n0 0 1\nMatrix is a sparse matrix.\n```\n\n",
+                "### TestCase 2:\n```\nNumber of rows: 2\nNumber of columns: 4\nMatrix elements:\n1 0 0 0\n0 0 0 0\nMatrix is not a sparse matrix.\n```\n\n",
+                "### TestCase 3:\n```\nNumber of rows: 4\nNumber of columns: 4\nMatrix elements:\n0 0 0 0\n0 0 0 0\n0 0 0 0\n0 0 0 0\nMatrix is a sparse matrix.\n```\n\n",
+                "### TestCase 4:\n```\nNumber of rows: 3\nNumber of columns: 3\nMatrix elements:\n1 2 3\n4 5 6\n7 8 9\nMatrix is not a sparse matrix.\n```\n\n",
+                "### TestCase 5:\n```\nNumber of rows: 2\nNumber of columns: 2\nMatrix elements:\n0 0\n0 0\nMatrix is a sparse matrix.\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task054": {
+            "title": "Day 54 - 2D Array-V: Sum of Each Row and Column of a Matrix",
+            "day": 54,
+            "description": [
+                "Write a program to find the sum of each row and each column of a matrix.",
+                "Get the number of rows and columns from the user.",
+                "Read the matrix elements from the user.",
+                "Calculate the sum of each row and each column.",
+                "Print the sums."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber of rows: 3\nNumber of columns: 3\nMatrix elements:\n1 2 3\n4 5 6\n7 8 9\nSum of each row: 6 15 24\nSum of each column: 12 15 18\n```\n\n",
+                "### TestCase 2:\n```\nNumber of rows: 2\nNumber of columns: 4\nMatrix elements:\n1 2 3 4\n5 6 7 8\nSum of each row: 10 26\nSum of each column: 6 8 10 12\n```\n\n",
+                "### TestCase 3:\n```\nNumber of rows: 4\nNumber of columns: 2\nMatrix elements:\n1 2\n3 4\n5 6\n7 8\nSum of each row: 3 7 11 15\nSum of each column: 16 20\n```\n\n",
+                "### TestCase 4:\n```\nNumber of rows: 3\nNumber of columns: 3\nMatrix elements:\n0 0 0\n0 0 0\n0 0 0\nSum of each row: 0 0 0\nSum of each column: 0 0 0\n```\n\n",
+                "### TestCase 5:\n```\nNumber of rows: 2\nNumber of columns: 3\nMatrix elements:\n1 1 1\n1 1 1\nSum of each row: 3 3\nSum of each column: 2 2 2\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task055": {
+            "title": "Day 55 - Array-Left Rotate",
+            "day": 55,
+            "description": [
+                "Write a program to left rotate an array by n positions.",
+                "Get the size of the array from the user.",
+                "Get the elements of the array from the user.",
+                "Get the number of positions to rotate the array from the user.",
+                "Perform the left rotation and print the rotated array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\nNumber of positions to rotate: 2\nRotated array: 8 3 9 2 5\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 6\nArray elements: 1 2 3 4 5 6\nNumber of positions to rotate: 3\nRotated array: 4 5 6 1 2 3\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 4\nArray elements: 10 20 30 40\nNumber of positions to rotate: 1\nRotated array: 20 30 40 10\n```\n\n",
+                "### TestCase 4:\n```\nArray size: 7\nArray elements: 5 10 15 20 25 30 35\nNumber of positions to rotate: 4\nRotated array: 25 30 35 5 10 15 20\n```\n\n",
+                "### TestCase 5:\n```\nArray size: 3\nArray elements: 7 14 21\nNumber of positions to rotate: 1\nRotated array: 14 21 7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task056": {
+            "title": "Day 56 - Array-Left & Right Rotate",
+            "day": 56,
+            "description": [
+                "Write a program to left rotate an array by n positions and right rotate by n positions in a menu-driven fashion.",
+                "Get the size of the array from the user.",
+                "Get the elements of the array from the user.",
+                "Provide a menu for the user to choose between left rotate and right rotate.",
+                "Perform the chosen rotation and print the rotated array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\nChoose rotation type (left/right): left\nNumber of positions to rotate: 2\nRotated array: 8 3 9 2 5\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 6\nArray elements: 1 2 3 4 5 6\nChoose rotation type (left/right): right\nNumber of positions to rotate: 3\nRotated array: 4 5 6 1 2 3\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 4\nArray elements: 10 20 30 40\nChoose rotation type (left/right): left\nNumber of positions to rotate: 1\nRotated array: 20 30 40 10\n```\n\n",
+                "### TestCase 4:\n```\nArray size: 7\nArray elements: 5 10 15 20 25 30 35\nChoose rotation type (left/right): right\nNumber of positions to rotate: 4\nRotated array: 20 25 30 35 5 10 15\n```\n\n",
+                "### TestCase 5:\n```\nArray size: 3\nArray elements: 7 14 21\nChoose rotation type (left/right): left\nNumber of positions to rotate: 1\nRotated array: 14 21 7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task057": {
+            "title": "Day 57 - Trailing Zeros",
+            "day": 57,
+            "description": [
+                "Write a program to count the number of trailing zeros in the binary representation of an integer using the Bitwise Operator.",
+                "Get the integer from the user.",
+                "Calculate the number of trailing zeros in its binary representation and print the result."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInteger: 8\nBinary representation: 1000\nNumber of trailing zeros: 3\n```\n\n",
+                "### TestCase 2:\n```\nInteger: 20\nBinary representation: 10100\nNumber of trailing zeros: 2\n```\n\n",
+                "### TestCase 3:\n```\nInteger: 32\nBinary representation: 100000\nNumber of trailing zeros: 5\n```\n\n",
+                "### TestCase 4:\n```\nInteger: 10\nBinary representation: 1010\nNumber of trailing zeros: 1\n```\n\n",
+                "### TestCase 5:\n```\nInteger: 7\nBinary representation: 111\nNumber of trailing zeros: 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task058": {
+            "title": "Day 58 - String Processing-VIII: Make a Palindromic String Non-Palindromic",
+            "day": 58,
+            "description": [
+                "Write a program to make a palindromic string non-palindromic by rearranging its letters.",
+                "Get a character array from the user.",
+                "Print the string after rearranging some characters such that the string becomes non-palindromic. If it\u2019s impossible, print `-1`."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nChar array: a m m a\nOutput: aamm\n```\n\n",
+                "### TestCase 2:\n```\nChar array: a b a b\nOutput: abab\n```\n\n",
+                "### TestCase 3:\n```\nChar array: a a\nOutput: -1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task059": {
+            "title": "Day 59 - Capitalize First and Last Letter of Each Word",
+            "day": 59,
+            "description": [
+                "Write a program to capitalize the first and last letter of each word in an input line.",
+                "Get the character array input through the console, considering the input is in lowercase.",
+                "For two-letter words, both letters need to be capitalized."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput line: hello world\nOutput line: HellO WorlD\n```\n\n",
+                "### TestCase 2:\n```\nInput line: capitalize each word\nOutput line: CapitalizE EacH WorD\n```\n\n",
+                "### TestCase 3:\n```\nInput line: hi there\nOutput line: HI TherE\n```\n\n",
+                "### TestCase 4:\n```\nInput line: this is an example\nOutput line: ThiS IS AN ExamplE\n```\n\n",
+                "### TestCase 5:\n```\nInput line: a quick brown fox\nOutput line: A QuicK BrowN FoX\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task060": {
+            "title": "Day 60 - Finding Subarray with Given Sum",
+            "day": 60,
+            "description": [
+                "Write a program to find a subarray which sums to an input sum.",
+                "Get the array length and sum from the user through the console.",
+                "The subarray should be a sequence of elements (no jumping indices)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray length: 5\nArray elements: 1 2 3 7 5\nSum: 12\nSubarray found from index 1 to 3\n```\n\n",
+                "### TestCase 2:\n```\nArray length: 10\nArray elements: 15 2 4 8 9 5 10 23\nSum: 23\nSubarray found from index 1 to 4\n```\n\n",
+                "### TestCase 3:\n```\nArray length: 6\nArray elements: 1 4 20 3 10 5\nSum: 33\nSubarray found from index 2 to 4\n```\n\n",
+                "### TestCase 4:\n```\nArray length: 5\nArray elements: 1 4 0 0 3\nSum: 7\nSubarray found from index 1 to 4\n```\n\n",
+                "### TestCase 5:\n```\nArray length: 4\nArray elements: 1 2 3 7\nSum: 15\nNo subarray found\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task061": {
+            "title": "Day 61 - Perfect Number",
+            "day": 61,
+            "description": [
+                "Write a program to check whether a number is a perfect number or not.",
+                "A perfect number is a positive integer that is equal to the sum of its proper positive divisors, excluding itself.",
+                "For example, 6 is a perfect number because its proper divisors are 1, 2, and 3, and their sum is 6 (1 + 2 + 3 = 6)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nNumber: 6\nProper divisors: 1, 2, 3\nSum of proper divisors: 6\n6 is a perfect number.\n```\n\n",
+                "### TestCase 2:\n```\nNumber: 28\nProper divisors: 1, 2, 4, 7, 14\nSum of proper divisors: 28\n28 is a perfect number.\n```\n\n",
+                "### TestCase 3:\n```\nNumber: 12\nProper divisors: 1, 2, 3, 4, 6\nSum of proper divisors: 16\n12 is not a perfect number.\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task062": {
+            "title": "Day 62 - Strong Number",
+            "day": 62,
+            "description": [
+                "Write a program to generate Strong numbers from 1 to 1000.",
+                "A Strong number is a special number whose sum of the factorial of its digits is equal to the original number.",
+                "For example, 145 is a Strong number because 1! + 4! + 5! = 145."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nRange: 1 to 1000\nStrong numbers: 1, 2, 145\n```\n\n",
+                "### TestCase 2:\n```\nRange: 1 to 100\nStrong numbers: 1, 2\n```\n\n",
+                "### TestCase 3:\n```\nRange: 100 to 500\nStrong numbers: 145\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task063": {
+            "title": "Day 63 - Run Length Encoding-I",
+            "day": 63,
+            "description": [
+                "Write a program to print the frequency of letters in a string using run-length encoding (RLE).",
+                "Run-length encoding (RLE) is a very simple form of lossless data compression in which runs of data are stored as a single data value and count.",
+                "The program should handle only lowercase letters."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput String: aabbbcccc\nOutput: a2b3c4\n```\n\n",
+                "### TestCase 2:\n```\nInput String: aaaaaaaa\nOutput: a8\n```\n\n",
+                "### TestCase 3:\n```\nInput String: abcde\nOutput: a1b1c1d1e1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task064": {
+            "title": "Day 64 - Run Length Encoding-II",
+            "day": 64,
+            "description": [
+                "Write a program to print the frequency of letters in a string using run-length encoding (RLE).",
+                "Run-length encoding (RLE) is a very simple form of lossless data compression in which runs of data are stored as a single data value and count.",
+                "The program should handle lowercase letters, uppercase letters, and special characters."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput String: aabbbcccc\nOutput: a2b3c4\n```\n\n",
+                "### TestCase 2:\n```\nInput String: aaAAaa\nOutput: a2A2a2\n```\n\n",
+                "### TestCase 3:\n```\nInput String: !@@###$\nOutput: !1@2#3$1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task065": {
+            "title": "Day 65 - Run Length Encoding-III",
+            "day": 65,
+            "description": [
+                "Write a program to print the frequency of letters and numbers in a string using run-length encoding (RLE).",
+                "Run-length encoding (RLE) is a very simple form of lossless data compression in which runs of data are stored as a single data value and count.",
+                "The program should handle both uppercase and lowercase letters, as well as digits.",
+                "Limit the number with in 1 to 10."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput String: 11111uuKkkllMM2229999awWE\nOutput: one5u2K1k2l2M2two3nine4a1w1W1E1\n```\n\n",
+                "### TestCase 2:\n```\nInput String: aaAAA123456\nOutput: a2A3one1two1three1four1five1six1\n```\n\n",
+                "### TestCase 3:\n```\nInput String: 33333dddAAA11BBB22\nOutput: three5d3A3one2B3two2\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task066": {
+            "title": "Day 66 - Larger Elements",
+            "day": 66,
+            "description": [
+                "Write a program to find the number of larger elements on the right side in a string.",
+                "Accept a character array from the user.",
+                "For each character in the input string, count how many characters to the right of it are greater.",
+                "If the input string is \"abcd\", then the output is 3 2 1 0, because there are 3 greater characters on the right of 'a', 2 greater characters on the right of 'b', 1 greater character on the right of 'c', and 0 greater characters on the right of 'd'."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: abcd\nOutput: 3 2 1 0\n```\n\n",
+                "### TestCase 2:\n```\nInput string: dcba\nOutput: 0 0 0 0\n```\n\n",
+                "### TestCase 3:\n```\nInput string: aabbcc\nOutput: 4 4 2 2 0 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task067": {
+            "title": "Day 67 - Number of ways to reach given score in a game",
+            "day": 67,
+            "description": [
+                "Write a program to count the number of ways to reach a score using 1 and 2 with no consecutive 2s.",
+                "A cricket player has to score N runs where each run can be either 1 or 2, but consecutive runs of 2 are not allowed.",
+                "Find all possible combinations of runs that sum up to the given score."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput score: 4\nNumber of ways: 4\nExplanation:\n1+1+1+1\n1+2+1\n2+1+1\n1+1+2\n```\n\n",
+                "### TestCase 2:\n```\nInput score: 5\nNumber of ways: 6\nExplanation:\n1+1+1+1+1\n1+2+1+1\n1+1+2+1\n2+1+1+1\n2+1+2\n1+2+2\n```\n\n",
+                "### TestCase 3:\n```\nInput score: 3\nNumber of ways: 3\nExplanation:\n1+1+1\n1+2\n2+1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task068": {
+            "title": "Day68 - Replace Duplicates",
+            "day": 68,
+            "description": [
+                "Write a program to replace duplicates with greater than duplicate value",
+                "Given an array of elements and change the array in such a way that all the elements on the array are distinct.",
+                "if you are replacing a value, then the replacing value should be great than the previous value and after modification sum of the elements should be as less as possible."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput : 1 1 1 1 1 2 2 2 2 2 3 3 3 1 1 1 4 4 \nOutput : 1 2 1 2 1 2 3 2 3 2 3 4 3 1 2 1 4 5\nSum : 42\n```\n\n",
+                "### TestCase 2:\n```\nInput : 1 1 1 1 1 1 1 1 1 1 1\nOutput : 1 2 1 2 1 2 1 2 1 2 1\nSum : 16\n```\n\n",
+                "### TestCase 3:\n```\nInput : 1 2 3 4 5 6 7 8 9\nOutput : 1 2 3 4 5 6 7 8 9\nSum : 45\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task069": {
+            "title": "Day 69 - Rearranging Elements",
+            "day": 69,
+            "description": [
+                "Write a program to rearrange odd and even values in an array in an alternating fashion in ascending order.",
+                "Get the input array from the user.",
+                "Ensure the number of odd elements is equal to the number of even elements in the input array.",
+                "If the smallest value in the array is even, arrange in an Even-Odd-Even-Odd pattern.",
+                "If the smallest value in the array is odd, arrange in an Odd-Even-Odd-Even pattern."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput array: 5 2 9 8 3 4\nRearranged array: 2 3 4 5 8 9\n```\n\n",
+                "### TestCase 2:\n```\nInput array: 7 6 1 8 3 2\nRearranged array: 1 2 3 6 7 8\n```\n\n",
+                "### TestCase 3:\n```\nInput array: 4 1 6 3 8 5\nRearranged array: 1 4 3 6 5 8\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task070": {
+            "title": "Day 70 - Sum Triangle",
+            "day": 70,
+            "description": [
+                "Write a program to print a Sum Triangle for a given array.",
+                "Given an array, construct a triangle where the last row contains the elements of the given array.",
+                "Every element of the second last row contains the sum of the two elements directly below it in the triangle, and this pattern continues upwards until the top of the triangle is reached."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput array: 1 2 3 4 5\nSum Triangle:\n48\n20 28\n8 12 16\n3 5 7 9\n1 2 3 4 5\n```\n\n",
+                "### TestCase 2:\n```\nInput array: 2 4 6\nSum Triangle:\n24\n10 14\n2 4 6\n```\n\n",
+                "### TestCase 3:\n```\nInput array: 3 5 7 9\nSum Triangle:\n72\n30 42\n11 19 23\n3 5 7 9\n```\n\n",
+                "### TestCase 4:\n```\nInput array: 1 1 1 1\nSum Triangle:\n8\n4 4\n2 2 2\n1 1 1 1\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task071": {
+            "title": "Day 71 - Smallest Pair",
+            "day": 71,
+            "description": [
+                "Write a program to find the smallest pair in an array.",
+                "Given an array of distinct numbers, find the pair which has the minimum sum and print the sum along with the pair."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 5\nArray elements: 2 5 8 3 9\nSmallest pair: (2, 3)\nSmallest pair sum: 5\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 6\nArray elements: 10 20 3 5 7 2\nSmallest pair: (2, 3)\nSmallest pair sum: 5\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 4\nArray elements: 4 1 9 2\nSmallest pair: (1, 2)\nSmallest pair sum: 3\n```\n\n",
+                "### TestCase 4:\n```\nArray size: 7\nArray elements: 15 12 5 7 10 8 3\nSmallest pair: (3, 5)\nSmallest pair sum: 8\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task072": {
+            "title": "Day 72 - Output Generation-VII",
+            "day": 72,
+            "description": [
+                "Write a program to generate the specified output.",
+                "Be conscious about the number of spaces between the characters."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput: 5\nOutput:\n0        0\n01      01\n010    010\n0101  0101\n0101001010\n```\n\n",
+                "### TestCase 2:\n```\nInput: 6\nOutput:\n0          0\n01        01\n010      010\n0101    0101\n01010  01010\n010101010101\n```\n\n",
+                "### TestCase 3:\n```\nInput: 7\nOutput:\n0            0\n01          01\n010        010\n0101      0101\n01010    01010\n010101  010101\n01010100101010\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task073": {
+            "title": "Day 73 - Print the Day",
+            "day": 73,
+            "description": [
+                "Write a program to print whether the given date is a weekday or a weekend.",
+                "Get the date from the user in DD-MM-YYYY format.",
+                "If the entered date is valid, print the day of the week and whether it is a weekday or weekend.",
+                "If the user enters an invalid date, output \"please enter the date in proper format\"."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput date: 15-05-2019\nOutput: Wednesday-Weekday\n```\n\n",
+                "### TestCase 2:\n```\nInput date: 23-03-2019\nOutput: Saturday-Weekend\n```\n\n",
+                "### TestCase 3:\n```\nInput date: 29-02-2021\nOutput: please enter the date in proper format\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task074": {
+            "title": "Day 74 - Spiral Matrix",
+            "day": 74,
+            "description": [
+                "Write a program to print a spiral matrix.",
+                "Analyze and design a solution that will print the numbers in a spiral order for a given N x M matrix, where N is the number of rows and M is the number of columns.",
+                "The number sequence will be from 1 to N x M."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMatrix size: 3 x 3\nOutput:\n1 2 3\n8 9 4\n7 6 5\n```\n\n",
+                "### TestCase 2:\n```\nMatrix size: 4 x 4\nOutput:\n1  2  3  4\n12 13 14 5\n11 16 15 6\n10 9  8  7\n```\n\n",
+                "### TestCase 3:\n```\nMatrix size: 2 x 3\nOutput:\n1 2 3\n6 5 4\n```\n\n",
+                "### TestCase 4:\n```\nMatrix size: 3 x 2\nOutput:\n1 2\n6 3\n5 4\n```\n\n",
+                "### TestCase 5:\n```\nMatrix size: 5 x 5\nOutput:\n1  2  3  4  5\n16 17 18 19 6\n15 24 25 20 7\n14 23 22 21 8\n13 12 11 10 9\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task075": {
+            "title": "Day 75 - 2D Array Clockwise Rotation",
+            "day": 75,
+            "description": [
+                "Write a program to rotate a 2D array (matrix) elements in a clockwise direction and print the result.",
+                "Get the dimensions of the matrix (rows and columns) from the user.",
+                "Get the elements of the matrix from the user.",
+                "Rotate the matrix clockwise and print the rotated matrix."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMatrix size: 3 x 3\nMatrix elements:\n1 2 3\n4 5 6\n7 8 9\nRotated matrix:\n4\t1\t2\n7\t5\t3\n8\t9\t6\n```\n\n",
+                "### TestCase 2:\n```\nMatrix size: 4 x 4\nMatrix elements:\n1  2  3  4\n5  6  7  8\n9  10 11 12\n13 14 15 16\nRotated matrix:\n5  1  2  3\n9  10 6  4\n13 11 7  8\n14 15 16 12\n```\n\n",
+                "### TestCase 3:\n```\nMatrix size: 3 x 2\nMatrix elements:\n1\t2\n3\t4\n5\t6\nRotated matrix:\n3\t1\n5\t2\n6\t4\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task076": {
+            "title": "Day 76 - 2D Array Anti-clockwise Rotation",
+            "day": 76,
+            "description": [
+                "Write a program to rotate a 2D array (matrix) elements in an anti-clockwise direction and print the result.",
+                "Get the dimensions of the matrix (rows and columns) from the user.",
+                "Get the elements of the matrix from the user.",
+                "Rotate the matrix anti-clockwise and print the rotated matrix."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMatrix size: 3 x 3\nMatrix elements:\n1\t2\t3\n4\t5\t6\n7\t8\t9\nRotated matrix:\n2\t3\t6\n1\t5\t9\n4\t7\t8\n```\n\n",
+                "### TestCase 2:\n```\nMatrix size: 4 x 4\nMatrix elements:\n1  2  3  4\n5  6  7  8\n9  10 11 12\n13 14 15 16\nRotated matrix:\n2  3  4  8\n1  7  11 12\n5  6  10 16\n9  13 14 15\n```\n\n",
+                "### TestCase 3:\n```\nMatrix size: 3 x 2\nMatrix elements:\n1\t2\n3\t4\n5\t6\nRotated matrix:\n2\t4\n1\t6\n3\t5\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task077": {
+            "title": "Day 77 - Zero the Edges",
+            "day": 77,
+            "description": [
+                "Write a program that clears to zero all the edge elements of an MXN matrix.",
+                "Prompt the user to enter the number of rows (M) and columns (N) for the matrix.",
+                "Initialize the matrix with values.",
+                "Iterate through the matrix and set all elements in the first row, last row, first column, and last column to zero.",
+                "Display the matrix before and after zeroing the edge elements."
+            ],
+            "testCases": [],
+            "completedUsers": []
+        },
+        "task078": {
+            "title": "Day 78 - Minimum Absolute Difference",
+            "day": 78,
+            "description": [
+                "Write a program to find the minimum absolute difference between a given number N and its closest prime number.",
+                "If N is a prime number itself, the program should output 0.",
+                "The closest prime to N can be either less than, equal to, or greater than N.",
+                "The program should compute and output the smallest absolute difference between N and any prime number.",
+                "The closest prime numbers are 23 (less than 25) and 29 (greater than 25).",
+                "Absolute differences: |25 - 23| = 2, |25 - 29| = 4.",
+                "Minimum difference is 2, so the output should be 2."
+            ],
+            "testCases": [],
+            "completedUsers": []
+        },
+        "task079": {
+            "title": "Day 79 - Zigzag Traversal",
+            "day": 79,
+            "description": [
+                "Write a program to print all elements of a given MXN matrix in diagonal order.",
+                "Diagonal order traversal starts from the top-left corner and goes down to the bottom-right corner, alternating between going down-right and up-left.",
+                "Ensure the program handles a 2D array and prints elements according to the zigzag diagonal traversal."
+            ],
+            "testCases": [],
+            "completedUsers": []
+        },
+        "task080": {
+            "title": "Day 80 - Closest Smaller Value",
+            "day": 80,
+            "description": [
+                "Write a program to find the closest smaller value for every element in an array of integers.",
+                "Prompt the user to enter the size of the array and then the array elements.",
+                "For each element in the array, determine the closest smaller element. If there's no smaller element, print `-1`.",
+                "For `10`, the closest smaller element is `6`.",
+                "For `5`, there's no smaller element, hence `-1`.",
+                "For `11`, the closest smaller element is `10`.",
+                "For `6`, the closest smaller element is `5`.",
+                "For `20`, the closest smaller element is `12`.",
+                "For `12`, the closest smaller element is `11`.",
+                "1 5 10 15 20"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the size of the array: 6\nEnter 6 integer elements:\n10 5 11 6 20 12\nFinal output is:\n6 -1 10 5 12 11\n```\n\n",
+                "### TestCase 2:\n```\nEnter the size of the array: 5\nEnter 5 integer elements:\n5 10 15 20 25\nFinal output is:\n-1 5 10 15 20\n```\n\n",
+                "### TestCase 3:\n```\nEnter the size of the array: 7\nEnter 7 integer elements:\n20 15 30 10 25 5 35\nFinal output is:\n15 10 25 5 20 -1 30\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task081": {
+            "title": "Day 81 - Move special chars to end",
+            "day": 81,
+            "description": [
+                "Create a program to move all the special characters to the end of a given string.",
+                "Get the input string from the user through the console.",
+                "Identify special characters (non-alphanumeric characters) except space and rearrange them to appear at the end of the string while maintaining the order of alphanumeric characters."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: abc$%def&*123\nOutput string: abcdef123$%&*\n```\n\n",
+                "### TestCase 2:\n```\nInput string: T@e!c&&h@i*e N?e@r##d~~s&\nOutput string: Techie Nerds@!&&@*?@##~~& \n```\n\n",
+                "### TestCase 3:\n```\nInput string: Hello World!\nOutput string: Hello World!\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task082": {
+            "title": "Day 82 - Index pairs with equal elements",
+            "day": 82,
+            "description": [
+                "Create a program to count the total number of index pairs (i, j) such that arr[i] = arr[j] and i != j.",
+                "Get the size of the array and elements from the user through the console.",
+                "Traverse through the array to find all such index pairs where the elements are equal but the indices are different."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray elements: 1 1 1 2 2 3 2\nNumber of index pairs with equal elements: 6\n```\n\n",
+                "### TestCase 2:\n```\nArray elements: 5 2 5 8 3 3 7\nNumber of index pairs with equal elements: 2\n```\n\n",
+                "### TestCase 3:\n```\nArray elements: 1 2 3 4 5\nNumber of index pairs with equal elements: 0\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task083": {
+            "title": "Day 83 - Count pairs in an array",
+            "day": 83,
+            "description": [
+                "Create a program to count the total number of pairs in an array whose sum is divisible by a given integer \\( k \\).",
+                "Get the size of the array, array elements, and the value of \\( k \\) from the user through the console.",
+                "Traverse through the array to find all pairs (i, j) such that \\( arr[i] + arr[j] \\) is divisible by \\( k \\)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 6\nArray elements: 1 2 3 4 5 6\nValue of k: 3\nNumber of pairs whose sum is divisible by k: 5\nExplanation: Pairs (1, 2), (1, 5), (2, 4), (3, 6), and (4, 5) have sums that are divisible by 3.\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 5\nArray elements: 10 20 30 40 50\nValue of k: 4\nNumber of pairs whose sum is divisible by k: 4\nExplanation: Pairs (10, 30), (10, 50), (20, 40), and (30, 50) have sums that are divisible by 4.\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 4\nArray elements: 3 7 11 15\nValue of k: 5\nNumber of pairs whose sum is divisible by k: 0\nExplanation: No pairs have sums that are divisible by 5 in the given array.\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task084": {
+            "title": "Day 84 - Longest Subsequence",
+            "day": 84,
+            "description": [
+                "Create a program to find the longest subsequence such that adjacent elements have at least one common digit.",
+                "Given an array `arr[]` of `n` integers, the task is to find the length of the longest subsequence where adjacent elements of the subsequence share at least one digit."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray : 23 35 56 62 74\nLength of the longest subsequence: 4\nLongest Subsequence : 23 35 56 62\n```\n\n",
+                "### TestCase 2:\n```\nArray : 12 45 78 89\nLength of the longest subsequence: 2\nLongest Subsequence : 78 89\n```\n\n",
+                "### TestCase 3:\n```\nArray : 12 98 23 87 34 76      \nLength of the longest subsequence: 3\nLongest Subsequence : 12 23 34\nLongest Subsequence : 98 87 76\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task085": {
+            "title": "Day 85 - Minimising Array Sum",
+            "day": 85,
+            "description": [
+                "Create a program to minimize the sum of an integer array by repeatedly subtracting larger elements from smaller ones.",
+                "Get the array from the user.",
+                "Continue the process of selecting any two elements `A` and `B` where `A > B`, and subtract `B` from `A` until no more such pairs exist.",
+                "Return the minimized sum of the array."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray : 1 2 3 4 5\nMinimized array: [1, 1, 1, 1, 1]\nMinimized array sum: 5\n```\n\n",
+                "### TestCase 2:\n```\nArray : 2 4 6 8 10\nMinimized array: [2, 2, 2, 2, 2]\nMinimized array sum: 10\n```\n\n",
+                "### TestCase 3:\n```\nArray : 20 34 45 56 67 78 89\nMinimized array: [1, 1, 1, 1, 1, 1, 1]\nMinimized array sum: 7\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task086": {
+            "title": "Day 86 - Unique Pairs",
+            "day": 86,
+            "description": [
+                "Create a program to find the number of unique pairs in an integer array.",
+                "Given an array `arr[]` of `n` elements, the task is to find all the unique pairs that can be formed using the elements of the given array.",
+                "Each pair `(A, B)` is considered unique even if `A` and `B` are the same element.",
+                "Example : arr[] = {1,1,2} then the output is 4, because (1,1),(1,2),(2,1) & (2,2) are the unique pairs."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray : 1 1 2\nUnique pairs: [(1, 1), (1, 2), (2, 1), (2, 2)]\nNumber of unique pairs: 4\n```\n\n",
+                "### TestCase 2:\n```\nArray : 2 3 2 3\nUnique pairs: [(2, 2), (2, 3), (3, 2), (3, 3)]\nNumber of unique pairs: 4\n```\n\n",
+                "### TestCase 3:\n```\nArray : 1 1 2 2 3\nUnique pairs: [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]\nNumber of unique pairs: 9\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task087": {
+            "title": "Day 87 - Palindromic Partitions",
+            "day": 87,
+            "description": [
+                "Create a program to print all the palindromic partitions of a given string.",
+                "A palindromic partition of a string is a decomposition of the string into substrings such that each substring is a palindrome.",
+                "Get the string from the user and find all possible palindromic partitions."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nEnter the string\naab\nPalindromic partitions are\na a b \naa \n```\n\n",
+                "### TestCase 2:\n```\nEnter the string\nracecar\nPalindromic partitions are\nr a c e c a r \ncec \naceca \nracecar \n```\n\n",
+                "### TestCase 3:\n```\nEnter the string\nandroid\nPalindromic partitions are\na n d r o i d \n```\n\n",
+                "### TestCase 4:\n```\nEnter the string\napple\nPalindromic partitions are\na p p l e \npp \n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task088": {
+            "title": "Day 88 - Count Pairs (LCM)",
+            "day": 88,
+            "description": [
+                "Create a program to count pairs in an array such that the LCM(arr[i], arr[j]) > min(arr[i], arr[j]).",
+                "Given an array `arr[]` of `n` elements, the task is to find the count of pairs `(arr[i], arr[j])` from the array that satisfy the condition.",
+                "Pairs `(arr[i], arr[j])` and `(arr[j], arr[i])` are considered identical and will be counted only once.",
+                "Get the size of the array from the user.",
+                "Calculate the LCM and minimum for each pair to count the pairs meeting the criteria.",
+                "Example: if arr[] = {1, 1, 4, 9} then, Output is 5. Becasue, all valid pairs are (1, 4), (1, 9), (1, 4), (1, 9) and (4, 9)"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 4\nArray elements: 2 4 6 8\nCount of pairs: 6\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 5\nArray elements: 1 2 3 4 5\nCount of pairs: 10\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 3\nArray elements: 3 6 9\nCount of pairs: 3\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task089": {
+            "title": "Day 89 - Largest Number with Prime Digits",
+            "day": 89,
+            "description": [
+                "Create a program to find the largest number with prime digits that is less than or equal to a given integer `n`.",
+                "Given an integer `n`, find the largest integer `x` such that `x <= n` and all the digits of `x` are prime digits.",
+                "The prime digits are 2, 3, 5, and 7."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput value: 30\nLargest number with prime digits: 27\n```\n\n",
+                "### TestCase 2:\n```\nInput value: 100\nLargest number with prime digits: 77\n```\n\n",
+                "### TestCase 3:\n```\nInput value: 58\nLargest number with prime digits: 53\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task090": {
+            "title": "Day 90 - Make all numbers of an array equal",
+            "day": 90,
+            "description": [
+                "Create a program to check whether it is possible to make all numbers in an integer array equal.",
+                "Given an array `arr[]`, the task is to determine if all elements can be made equal using a given operation.",
+                "In a single operation, any element of the array can be either multiplied by 2 or by 3.",
+                "If it is possible to make all array elements equal with the given operation, print \"Yes\"; otherwise, print \"No\".",
+                "Example : for example, if input is arr[]={50,75,100} then output is Yes, because {50 * 2 * 3, 75 * 2 * 2, 100 * 3} = {300, 300, 300}"
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nArray size: 3\nArray elements: 2 4 8\nOutput: Yes\n```\n\n",
+                "### TestCase 2:\n```\nArray size: 3\nArray elements: 50 75 100\nOutput: Yes\n```\n\n",
+                "### TestCase 3:\n```\nArray size: 5\nArray elements: 1 2 4 8 16\nOutput: No\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task091": {
+            "title": "Day 91 - Largest Palindromic Number",
+            "day": 91,
+            "description": [
+                "Create a program to find the largest palindromic number by permuting the digits of a very large input number \\( N \\).",
+                "If it is not possible to form a palindromic number, the program should print \u201cPalindrome cannot be formed\u201d.",
+                "A palindromic number is a number that remains the same when its digits are reversed."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput number: 9876543210123456789\nLargest Palindromic Number: 98765678987656789\n```\n\n",
+                "### TestCase 2:\n```\nInput number: 12345\nPalindrome cannot be formed\n```\n\n",
+                "### TestCase 3:\n```\nInput number: 313551\nLargest Palindromic Number: 531135\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task092": {
+            "title": "Day 92 - Cyclic Permutations",
+            "day": 92,
+            "description": [
+                "Create a program to generate all cyclic permutations of a number.",
+                "Get the input number through the console.",
+                "Print all the cyclic permutations of the given number."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput number: 123\nCyclic Permutations:\n123\n231\n312\n```\n\n",
+                "### TestCase 2:\n```\nInput number: 4567\nCyclic Permutations:\n4567\n5674\n6745\n7456\n```\n\n",
+                "### TestCase 3:\n```\nInput number: 89\nCyclic Permutations:\n89\n98\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task093": {
+            "title": "Day 93 - Remove Consecutive Vowels",
+            "day": 93,
+            "description": [
+                "Create a program to remove consecutive vowels from a given string.",
+                "Given a string \\( s \\) of lowercase letters, the program should ensure that the final output does not contain two consecutive vowels.",
+                "Get the input string through the console."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: beautiful\nOutput string: betiful\n```\n\n",
+                "### TestCase 2:\n```\nInput string: queueing\nOutput string: qung\n```\n\n",
+                "### TestCase 3:\n```\nInput string: i am very serious about my career\nOutput string: i am very seris abot my carer\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task094": {
+            "title": "Day 94 - Circular Prime",
+            "day": 94,
+            "description": [
+                "Create a menu-driven program to check whether a given number is a circular prime number.",
+                "A circular prime is a prime number with the property that all cyclic permutations of its digits are also prime numbers.",
+                "The program should also generate and display all circular prime numbers from 1 to 1000.",
+                "Example: 1193 is a circular prime, since 3119, 9311 and 1931 are prime numbers."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMenu:\n1. Check if a number is a circular prime\n2. Generate circular primes from 1 to 1000\n3. Exit\nChoose an option: 1\nEnter a number: 197\nOutput: 197 is a Circular Prime\n```\n\n",
+                "### TestCase 2:\n```\nMenu:\n1. Check if a number is a circular prime\n2. Generate circular primes from 1 to 1000\n3. Exit\nChoose an option: 1\nEnter a number: 101\nOutput: 101 is not a Circular Prime\n```\n\n",
+                "### TestCase 3:\n```\nMenu:\n1. Check if a number is a circular prime\n2. Generate circular primes from 1 to 1000\n3. Exit\nChoose an option: 2\nOutput: [2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, 97, 113, 131, 197, 199, 311, 337, 373, 719, 733, 919, 971, 991]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task095": {
+            "title": "Day 95 - Narcissistic Decimal Numbers",
+            "day": 95,
+            "description": [
+                "Create a menu-driven program to check whether a given number is a Narcissistic Decimal Number.",
+                "A Narcissistic Number is a number that is the sum of its own digits each raised to the power of the number of digits.",
+                "The program should also generate and display the first 15 Narcissistic Decimal Numbers.",
+                "Example: 1634 is Narcissistic Number, because 1^4 + 6^4 + 3^4 + 4^4 = 1634."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMenu:\n1. Check if a number is a Narcissistic Decimal Number\n2. Generate first 15 Narcissistic Decimal Numbers\n3. Exit\nChoose an option: 1\nEnter a number: 1634\nOutput: 1634 is a Narcissistic Decimal Number\n```\n\n",
+                "### TestCase 2:\n```\nMenu:\n1. Check if a number is a Narcissistic Decimal Number\n2. Generate first 15 Narcissistic Decimal Numbers\n3. Exit\nChoose an option: 1\nEnter a number: 123\nOutput: 123 is not a Narcissistic Decimal Number\n```\n\n",
+                "### TestCase 3:\n```\nMenu:\n1. Check if a number is a Narcissistic Decimal Number\n2. Generate first 15 Narcissistic Decimal Numbers\n3. Exit\nChoose an option: 2\nOutput: [1, 2, 3, 4, 5, 6, 7, 8, 9, 153, 370, 371, 407, 1634, 8208]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task096": {
+            "title": "Day 96 - Automorphic Number",
+            "day": 96,
+            "description": [
+                "Create a menu-driven program to check whether a given number is an Automorphic Number.",
+                "An Automorphic Number is a number whose square ends in the same digits as the number itself.",
+                "The program should also generate and display all Automorphic Numbers between 1 and 1000.",
+                "Example: 76 is Automorphic Number, because 76 * 76 = 5776."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nMenu:\n1. Check if a number is an Automorphic Number\n2. Generate Automorphic Numbers between 1 and 1000\n3. Exit\nChoose an option: 1\nEnter a number: 76\nOutput: 76 is an Automorphic Number\n```\n\n",
+                "### TestCase 2:\n```\nMenu:\n1. Check if a number is an Automorphic Number\n2. Generate Automorphic Numbers between 1 and 1000\n3. Exit\nChoose an option: 1\nEnter a number: 50\nOutput: 50 is not an Automorphic Number\n```\n\n",
+                "### TestCase 3:\n```\nMenu:\n1. Check if a number is an Automorphic Number\n2. Generate Automorphic Numbers between 1 and 1000\n3. Exit\nChoose an option: 2\nOutput: [1, 5, 6, 25, 76, 376, 625, 9376]\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task097": {
+            "title": "Day 97 - Pangram",
+            "day": 97,
+            "description": [
+                "Create a program to display missing characters to make a string a pangram.",
+                "A pangram is a sentence containing every letter in the English alphabet.",
+                "Given a string, find all characters that are missing from the string to make it a pangram.",
+                "The output should be in alphabetical order."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: the quick brown fox jumps over the lazy dog\nOutput: The string is already a pangram.\n```\n\n",
+                "### TestCase 2:\n```\nInput string: pack my box with five dozen liquor jugs\nOutput: bkmq\n```\n\n",
+                "### TestCase 3:\n```\nInput string: hello world\nOutput: abcfgijkmnpqstuvxyz\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task098": {
+            "title": "Day 98 - Rearrange Characters",
+            "day": 98,
+            "description": [
+                "Create a program to rearrange characters in a string such that no two adjacent characters are the same.",
+                "Get the input string through the console (assume you are working with lowercase letters)."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: aaabc\nOutput: abaca\n```\n\n",
+                "### TestCase 2:\n```\nInput string: aaaaabccc\nOutput: abacacaca\n```\n\n",
+                "### TestCase 3:\n```\nInput string: aaac\nOutput: Not possible to rearrange\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task099": {
+            "title": "Day 99 - Longest Substring",
+            "day": 99,
+            "description": [
+                "Write a program to find the longest substring which is a prefix, a suffix, and also present inside the string.",
+                "Given a string `str`, find the longest substring that satisfies these conditions.",
+                "Example: string : ababcab, then output: ab. The substring \"ab\" is a prefix, a suffix, and is present inside the string \"ababcab\"."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: fixprefixsuffix\nOutput: fix\n```\n\n",
+                "### TestCase 2:\n```\nInput string: abcd\nOutput: (empty string)\n```\n\n",
+                "### TestCase 3:\n```\nInput string: abcab\nOutput: ab\n```\n"
+            ],
+            "completedUsers": []
+        },
+        "task100": {
+            "title": "Day 100 - Isogram Check",
+            "day": 100,
+            "description": [
+                "Write a program to check whether the given string is an isogram or not.",
+                "An isogram is a word in which no letter occurs more than once."
+            ],
+            "testCases": [
+                "### TestCase 1:\n```\nInput string: machine\nOutput: Yes\n```\n\n",
+                "### TestCase 2:\n```\nInput string: hello\nOutput: No\nLetter/s occurs more than once: l \n```\n\n",
+                "### TestCase 3:\n```\nInput string: algorithm\nOutput: Yes\n```\n"
+            ],
+            "completedUsers": []
+        }
+    }
+}

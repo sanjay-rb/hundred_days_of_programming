@@ -2,30 +2,46 @@ s = ""
 import json
 import requests
 
-responce = requests.get("https://raw.githubusercontent.com/sanjay-rb/100-Days-of-Code/main/README.md")
+responce = requests.get("https://raw.githubusercontent.com/sanjay-rb/hundred_days_of_programming/build/home_view/100.md")
 s = responce.text
-current_id = ""
-data = {"":{}}
-md = ""
-for l in s.splitlines():
-    data[current_id]['md'] = md
+data = {}
 
-    if l.startswith("# Day"):
-        id, title = l.split(" - ")
-        id = id.replace("# Day", "").strip()
-        title = title.strip()
-        if current_id != id:
-            md = ""
-            current_id = id
-            data[current_id] = {"id":current_id, "title":title}
+task = s.split("---")
 
-    if l.startswith("### "):
-        _, url = l.split("(")
-        url, _ = url.split(")")
-        url = url.strip()
-        data[current_id]["url"] =url
+def extract_test_case(string):
+    test_cases = []
+    for line in str(string[i]).splitlines():
+        if line.startswith("### TestCase"):
+            test_cases.append(line)
+        if test_cases[-1]:
+            test_cases[-1] += line
+    return test_cases
 
-    md += l +"\n"
+for i in range(1, 100+1):
+    si = "task"+str(i).zfill(3)
+    data[si] = {}
+    title = ""
+    description = []
+    test_cases = []
+    for line in str(task[i]).splitlines():
+        if line.startswith("## Day"):
+            title = line.removeprefix("## ").strip()
+        
+        if line.startswith("-"):
+            description.append(line.removeprefix("-").strip())
 
-with open("input.json", "w") as outfile: 
-    json.dump(data, outfile)
+        if line.startswith("### TestCase"):
+            test_cases.append(line + "\n")
+            continue
+
+        if test_cases:
+            test_cases[-1] += line + "\n"
+    
+    data[si]['title'] = title
+    data[si]['day'] = i
+    data[si]['description'] = description
+    data[si]['testCases'] = test_cases
+    data[si]['completedUsers'] = []
+
+with open("100.json", "w") as outfile: 
+    json.dump({"tasks":data}, outfile)
