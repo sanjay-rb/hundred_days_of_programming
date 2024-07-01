@@ -1,22 +1,6 @@
-Day39 - Output Generation-V
+Day41 - Zero Sum Subarray
 
-Write a program to Generate the following output
-be conscious about number of spaces between asterisks
-iterations 1 to 5 should be 18 to 2(difference should be 4)
-iterations 1 to 6 should be 22 to 2(difference should be 4)
-5
-
-*                  *
-* *              * *
-* * *          * * *
-* * * *      * * * *
-* * * * *  * * * * *
-* * * * *  * * * * *
-* * * *      * * * *
-* * *          * * *
-* *              * *
-*                  *
-
+Write a program to find any subarray that sums to zero, if one exists.
 
 Create a detail with the format given below for the heading given above:
 
