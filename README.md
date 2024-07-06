@@ -5,9 +5,12 @@
 This app is designed for beginners eager to learn programming through a 100-day coding challenge. It offers 100 problem statements, ranging from very basic to intermediate levels. Users will solve these problems, submit their solutions on GitHub and LinkedIn, and provide the URLs in the app for verification. Once verified, the tasks will be marked as complete.
 
 ## Badges
-![GitHub Latest Release)](https://img.shields.io/github/v/release/sanjay-rb/hundred_days_of_programming?logo=github) 
-![Perform CI Status](https://github.com/sanjay-rb/hundred_days_of_programming/actions/workflows/ci.yml/badge.svg)
-![Perform CD Status](https://github.com/sanjay-rb/hundred_days_of_programming/actions/workflows/cd.yml/badge.svg)
+[![Static Badge](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat&logo=github)](NOTICE)
+[![GitHub Latest Release)](https://img.shields.io/github/v/release/sanjay-rb/hundred_days_of_programming?logo=github)](https://github.com/sanjay-rb/hundred_days_of_programming/releases)
+
+[![Perform CI Status](https://github.com/sanjay-rb/loga_parameshwari/actions/workflows/ci.yml/badge.svg)](https://github.com/sanjay-rb/loga_parameshwari/actions/workflows/ci.yml)
+[![Perform CD Status](https://github.com/sanjay-rb/loga_parameshwari/actions/workflows/cd.yml/badge.svg)](https://github.com/sanjay-rb/loga_parameshwari/actions/workflows/cd.yml)
+
 
 ## Table of Contents
 - [Installation](#installation)
