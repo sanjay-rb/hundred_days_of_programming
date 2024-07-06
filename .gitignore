@@ -49,3 +49,5 @@ app.*.map.json
 venv
 /android/app/google-services.json
 .env
+/python/test.py
+serviceAccountKey.json

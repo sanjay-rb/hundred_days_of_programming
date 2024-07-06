@@ -1,0 +1,17 @@
+{
+    "users": {
+        "zePHJPeYVf2DUuzMRgvZ": {
+            "id": "zePHJPeYVf2DUuzMRgvZ",
+            "bio": "Sanjay Sanjoke RB",
+            "email": "sanjaybabu618@gmail.com",
+            "github": "https://github.com/sanjay-rb",
+            "linkedin": "https://www.linkedin.com/in/sanjayrb/",
+            "maxStreak": 20,
+            "streak": 1,
+            "name": "Sanjay RB",
+            "completedTasks": [
+                "task001"
+            ]
+        }
+    }
+}
