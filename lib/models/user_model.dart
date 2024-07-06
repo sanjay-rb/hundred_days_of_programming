@@ -4,13 +4,14 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
-class User {
+class UserModel {
   static const String collectionName = 'users';
-  static CollectionReference<User> userRef =
-      FirebaseFirestore.instance.collection(collectionName).withConverter<User>(
-            fromFirestore: (snapshot, _) => User.fromMap(snapshot.data()!),
-            toFirestore: (movie, _) => movie.toMap(),
-          );
+  static CollectionReference<UserModel> userRef = FirebaseFirestore.instance
+      .collection(collectionName)
+      .withConverter<UserModel>(
+        fromFirestore: (snapshot, _) => UserModel.fromMap(snapshot.data()!),
+        toFirestore: (user, _) => user.toMap(),
+      );
 
   String id;
   String name;
@@ -21,8 +22,9 @@ class User {
   int maxStreak;
   int streak;
   List completedTasks;
+  Timestamp lastSubmittedDate;
 
-  User({
+  UserModel({
     required this.id,
     required this.name,
     required this.bio,
@@ -32,9 +34,22 @@ class User {
     required this.maxStreak,
     required this.streak,
     required this.completedTasks,
+    required this.lastSubmittedDate,
   });
 
-  User copyWith({
+  static Stream<DocumentSnapshot<UserModel>> getUserStreamByID(String id) {
+    return userRef.doc(id).snapshots();
+  }
+
+  addUser() async {
+    await userRef.doc(id).set(this);
+  }
+
+  static Future<UserModel?> getUser(String id) async {
+    return (await userRef.doc(id).get()).data();
+  }
+
+  UserModel copyWith({
     String? id,
     String? name,
     String? bio,
@@ -44,8 +59,9 @@ class User {
     int? maxStreak,
     int? streak,
     List? completedTasks,
+    Timestamp? lastSubmittedDate,
   }) {
-    return User(
+    return UserModel(
       id: id ?? this.id,
       name: name ?? this.name,
       bio: bio ?? this.bio,
@@ -55,6 +71,7 @@ class User {
       maxStreak: maxStreak ?? this.maxStreak,
       streak: streak ?? this.streak,
       completedTasks: completedTasks ?? this.completedTasks,
+      lastSubmittedDate: lastSubmittedDate ?? this.lastSubmittedDate,
     );
   }
 
@@ -69,11 +86,12 @@ class User {
       'maxStreak': maxStreak,
       'streak': streak,
       'completedTasks': completedTasks,
+      'lastSubmittedDate': lastSubmittedDate,
     };
   }
 
-  factory User.fromMap(Map<String, dynamic> map) {
-    return User(
+  factory UserModel.fromMap(Map<String, dynamic> map) {
+    return UserModel(
       id: map['id'] as String,
       name: map['name'] as String,
       bio: map['bio'] as String,
@@ -85,21 +103,22 @@ class User {
       completedTasks: List.from(
         (map['completedTasks'] as List),
       ),
+      lastSubmittedDate: map['lastSubmittedDate'] as Timestamp,
     );
   }
 
   String toJson() => json.encode(toMap());
 
-  factory User.fromJson(String source) =>
-      User.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory UserModel.fromJson(String source) =>
+      UserModel.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
   String toString() {
-    return 'User(id: $id, name: $name, bio: $bio, email: $email, github: $github, linkedin: $linkedin, maxStreak: $maxStreak, streak: $streak, completedTasks: $completedTasks)';
+    return 'UserModel(id: $id, name: $name, bio: $bio, email: $email, github: $github, linkedin: $linkedin, maxStreak: $maxStreak, streak: $streak, completedTasks: $completedTasks, lastSubmittedDate: $lastSubmittedDate)';
   }
 
   @override
-  bool operator ==(covariant User other) {
+  bool operator ==(covariant UserModel other) {
     if (identical(this, other)) return true;
 
     return other.id == id &&
@@ -110,7 +129,8 @@ class User {
         other.linkedin == linkedin &&
         other.maxStreak == maxStreak &&
         other.streak == streak &&
-        listEquals(other.completedTasks, completedTasks);
+        listEquals(other.completedTasks, completedTasks) &&
+        other.lastSubmittedDate == lastSubmittedDate;
   }
 
   @override
@@ -123,6 +143,7 @@ class User {
         linkedin.hashCode ^
         maxStreak.hashCode ^
         streak.hashCode ^
-        completedTasks.hashCode;
+        completedTasks.hashCode ^
+        lastSubmittedDate.hashCode;
   }
 }

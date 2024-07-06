@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/constants/theme_data_constant.dart';
+import 'package:hundred_days_of_programming/controllers/auth_controller.dart';
+import 'package:hundred_days_of_programming/controllers/theme_controller.dart';
 import 'package:hundred_days_of_programming/routes/get_route.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -30,6 +32,9 @@ Future<void> main() async {
     return true;
   };
 
+  Get.put(AuthController());
+  Get.put(ThemeController());
+
   runApp(const MyApp());
 }
 
@@ -42,7 +47,7 @@ class MyApp extends StatelessWidget {
       title: '100 Days of Programming',
       theme: ThemeDataConstant().getLightTheme(context),
       darkTheme: ThemeDataConstant().getDarkTheme(context),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
       ],

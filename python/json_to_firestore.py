@@ -12,7 +12,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 # Example JSON data
-with open("/Users/sanjayrb/projects/hundred_days_of_programming/user.json") as f:
+with open("/Users/sanjayrb/projects/hundred_days_of_programming/100.json") as f:
     json_data = f.read()
 
 # Convert JSON string to Python dictionary

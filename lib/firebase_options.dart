@@ -55,9 +55,9 @@ class DefaultFirebaseOptions {
 
   static FirebaseOptions android = FirebaseOptions(
     apiKey: dotenv.get('FIREBASE_API_KEY'),
-    appId: dotenv.get('FIREBASE_APP_ID'),
-    messagingSenderId: dotenv.get('FIREBASE_MESSAGE_ID'),
-    projectId: dotenv.get('FIREBASE_PROJECT_ID'),
-    storageBucket: dotenv.get('FIREBASE_STORAGE_BUCKET'),
+    appId: '1:193017618513:android:daf4da7d53321ed17c9870',
+    messagingSenderId: '193017618513',
+    projectId: 'hundred-days-of-programming',
+    storageBucket: 'hundred-days-of-programming.appspot.com',
   );
 }
