@@ -2,7 +2,7 @@ s = ""
 import json
 import requests
 
-responce = requests.get("https://raw.githubusercontent.com/sanjay-rb/hundred_days_of_programming/build/home_view/100.md")
+responce = requests.get("https://raw.githubusercontent.com/sanjay-rb/hundred_days_of_programming/main/100.md")
 s = responce.text
 data = {}
 
@@ -18,6 +18,7 @@ def extract_test_case(string):
     return test_cases
 
 for i in range(1, 100+1):
+    print(i)
     si = "task"+str(i).zfill(3)
     data[si] = {}
     title = ""
@@ -25,7 +26,9 @@ for i in range(1, 100+1):
     test_cases = []
     for line in str(task[i]).splitlines():
         if line.startswith("## Day"):
-            title = line.removeprefix("## ").strip()
+            line = line.removeprefix("## Day").strip()
+            _, line = line.split(' - ')
+            title = line.strip()
         
         if line.startswith("-"):
             description.append(line.removeprefix("-").strip())
@@ -38,10 +41,10 @@ for i in range(1, 100+1):
             test_cases[-1] += line + "\n"
     
     data[si]['title'] = title
+    data[si]['id'] = si
     data[si]['day'] = i
     data[si]['description'] = description
     data[si]['testCases'] = test_cases
-    data[si]['completedUsers'] = []
 
 with open("100.json", "w") as outfile: 
     json.dump({"tasks":data}, outfile)
