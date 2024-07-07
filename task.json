@@ -1,0 +1,13 @@
+{
+    "day": 1,
+    "description": [
+        "Create a program in any language to add two numbers and display the result."
+    ],
+    "id": "task001",
+    "testCases": [
+        "### TestCase 1:\n```\nNumber1: 5\nNumber2: 3\nSum: 8\n```\n\n",
+        "### TestCase 2:\n```\nNumber1: 6\nNumber2: 4\nSum: 10\n```\n\n",
+        "### TestCase 3:\n```\nNumber1: -10\nNumber2: 3\nSum: -7\n```\n"
+    ],
+    "title": "Adding Two Numbers"
+}

@@ -1,19 +1,20 @@
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 import 'package:get/get.dart';
-import 'package:hundred_days_of_programming/constants/theme_data_constant.dart';
-import 'package:hundred_days_of_programming/controllers/auth_controller.dart';
-import 'package:hundred_days_of_programming/controllers/theme_controller.dart';
-import 'package:hundred_days_of_programming/routes/get_route.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
-import 'firebase_options.dart';
+import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
+import 'package:hundred_days_of_programming/app/services/auth_service.dart';
+import 'package:hundred_days_of_programming/app/services/theme_service.dart';
+import 'package:hundred_days_of_programming/firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // Dotenv init
   await dotenv.load();
 
   // Firebase init
@@ -32,27 +33,27 @@ Future<void> main() async {
     return true;
   };
 
-  Get.put(AuthController());
-  Get.put(ThemeController());
+  // Init Auth
+  await Get.putAsync(() async => AuthService());
 
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: '100 Days of Programming',
-      theme: ThemeDataConstant().getLightTheme(context),
-      darkTheme: ThemeDataConstant().getDarkTheme(context),
+      title: "100 Days of Programming",
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
+      theme: ThemeService.getLightTheme(context),
+      darkTheme: ThemeService.getDarkTheme(context),
       themeMode: ThemeMode.system,
       navigatorObservers: [
         FirebaseAnalyticsObserver(analytics: FirebaseAnalytics.instance),
       ],
-      initialRoute: GetRoute.init,
-      getPages: GetRoute.route,
     );
   }
 }
