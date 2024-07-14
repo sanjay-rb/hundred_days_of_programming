@@ -2,40 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/app/data/models/task_model.dart';
 import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
-import 'package:hundred_days_of_programming/app/modules/home/controllers/home_controller.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
 import 'package:hundred_days_of_programming/app/services/logger_service.dart';
 
-class UiListTileWidget extends GetWidget<HomeController> {
+class UiListTileWidget extends StatelessWidget {
   const UiListTileWidget({
     super.key,
     required this.user,
-    required this.index,
+    required this.task,
   });
 
   final UserModel user;
-  final int index;
+  final TaskModel task;
 
   @override
   Widget build(BuildContext context) {
-    TaskModel task;
-    if (controller.tasks.value.isNotEmpty) {
-      task = controller.tasks.value[index];
-    } else {
-      task = TaskModel(
-        id: "id",
-        day: 0,
-        title: "title",
-        description: [],
-        testCases: [],
-      );
-    }
     return ListTile(
       leading: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Icon(
-            index <= user.completedTasks!.length ? Icons.lock_open : Icons.lock,
+            (task.day! - 1) <= user.completedTasks!.length
+                ? Icons.lock_open
+                : Icons.lock,
             color: Theme.of(context).colorScheme.tertiary,
           ),
         ],
@@ -70,11 +59,11 @@ class UiListTileWidget extends GetWidget<HomeController> {
         ],
       ),
       onTap: () {
-        if (index <= user.completedTasks!.length) {
+        if ((task.day! - 1) <= user.completedTasks!.length) {
           Get.toNamed(Routes.TASK, arguments: task);
         } else {
           LoggerService.info(
-            "Please complete task $index to unlock this task",
+            "Please complete task ${(task.day! - 1)} to unlock this task",
           );
         }
       },

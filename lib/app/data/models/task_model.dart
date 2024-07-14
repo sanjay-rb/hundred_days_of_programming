@@ -39,4 +39,9 @@ class TaskModel {
     data['title'] = title;
     return data;
   }
+
+  @override
+  String toString() {
+    return "TaskModel($id, $day, $title, $description)";
+  }
 }

@@ -10,6 +10,7 @@ class UiTextFormFieldWidget extends StatelessWidget {
     required this.icon,
     this.isPassword = false,
     this.isEditable = true,
+    this.validator,
   });
 
   final TextEditingController controller;
@@ -19,11 +20,18 @@ class UiTextFormFieldWidget extends StatelessWidget {
   final IconData icon;
   final bool isPassword;
   final bool isEditable;
+  final Function? validator;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: controller,
+      validator: (value) {
+        if (validator != null) {
+          return validator!(value);
+        }
+        return null;
+      },
       enabled: isEditable,
       obscureText: isPassword,
       decoration: InputDecoration(
