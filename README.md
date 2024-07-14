@@ -31,4 +31,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Releases
 
 ### Version : 1.0.0+1
-- Initial version of the app
+- Initial Rollout
