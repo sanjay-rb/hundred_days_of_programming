@@ -18,7 +18,7 @@ class LoginView extends GetView<LoginController> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return Center(
               child: CircularProgressIndicator(
-                color: Theme.of(context).colorScheme.secondary,
+                color: Get.theme.colorScheme.secondary,
               ),
             );
           }
@@ -30,7 +30,7 @@ class LoginView extends GetView<LoginController> {
                     padding: const EdgeInsets.all(8.0),
                     child: Center(
                       child: Card(
-                        color: Theme.of(context).colorScheme.primary,
+                        color: Get.theme.colorScheme.primary,
                         child: Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Form(
@@ -55,34 +55,38 @@ class LoginView extends GetView<LoginController> {
                                       ? const SizedBox()
                                       : UiTextFormFieldWidget(
                                           controller: controller.name,
+                                          validator: (value) {
+                                            return controller
+                                                .validateFormFields(value);
+                                          },
                                           label: "Name",
-                                          bgColor: Theme.of(context)
-                                              .colorScheme
-                                              .secondary,
-                                          textColor: Theme.of(context)
-                                              .colorScheme
-                                              .tertiary,
+                                          bgColor:
+                                              Get.theme.colorScheme.secondary,
+                                          textColor:
+                                              Get.theme.colorScheme.tertiary,
                                           icon: Icons.account_circle,
                                         ),
                                 ),
                                 const SizedBox(height: 25),
                                 UiTextFormFieldWidget(
                                   controller: controller.email,
+                                  validator: (value) {
+                                    return controller.validateFormFields(value);
+                                  },
                                   label: "Email",
-                                  bgColor:
-                                      Theme.of(context).colorScheme.secondary,
-                                  textColor:
-                                      Theme.of(context).colorScheme.tertiary,
+                                  bgColor: Get.theme.colorScheme.secondary,
+                                  textColor: Get.theme.colorScheme.tertiary,
                                   icon: Icons.email,
                                 ),
                                 const SizedBox(height: 25),
                                 UiTextFormFieldWidget(
                                   controller: controller.password,
+                                  validator: (value) {
+                                    return controller.validateFormFields(value);
+                                  },
                                   label: "Password",
-                                  bgColor:
-                                      Theme.of(context).colorScheme.secondary,
-                                  textColor:
-                                      Theme.of(context).colorScheme.tertiary,
+                                  bgColor: Get.theme.colorScheme.secondary,
+                                  textColor: Get.theme.colorScheme.tertiary,
                                   icon: Icons.password,
                                   isPassword: true,
                                 ),
@@ -94,12 +98,8 @@ class LoginView extends GetView<LoginController> {
                                   width:
                                       MediaQuery.of(context).size.width * .40,
                                   height: 40,
-                                  onTap: () async {
-                                    FocusScope.of(context).unfocus();
-                                    if (controller.formKey.currentState!
-                                        .validate()) {
-                                      await controller.signInOrUp();
-                                    }
+                                  onTap: () {
+                                    controller.signInOrUp();
                                   },
                                 ),
                                 const SizedBox(height: 25),
@@ -117,25 +117,19 @@ class LoginView extends GetView<LoginController> {
                                           text: controller.isLogin.value
                                               ? ' Sign Up'
                                               : ' Sign In',
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .bodyLarge!
+                                          style: Get.theme.textTheme.bodyLarge!
                                               .copyWith(
-                                                color: Theme.of(context)
-                                                    .colorScheme
-                                                    .secondary,
-                                                letterSpacing: 3,
-                                                fontWeight: FontWeight.bold,
-                                              ),
+                                            color:
+                                                Get.theme.colorScheme.secondary,
+                                            letterSpacing: 3,
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ],
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .labelLarge!
+                                      style: Get.theme.textTheme.labelLarge!
                                           .copyWith(
-                                              color: Theme.of(context)
-                                                  .colorScheme
-                                                  .tertiary),
+                                              color: Get
+                                                  .theme.colorScheme.tertiary),
                                     ),
                                   ),
                                 )

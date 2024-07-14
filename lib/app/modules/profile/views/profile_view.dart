@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
-import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_button_widget.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_text_form_field_widget.dart';
@@ -23,19 +21,19 @@ class ProfileView extends GetView<ProfileController> {
                 Center(
                   child: Text(
                     "Profile",
-                    style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                        color: Theme.of(context).colorScheme.secondary),
+                    style: Get.theme.textTheme.headlineLarge!
+                        .copyWith(color: Get.theme.colorScheme.secondary),
                   ),
                 ),
                 const SizedBox(height: 30),
                 CircleAvatar(
-                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  backgroundColor: Get.theme.colorScheme.secondary,
                   radius: 50,
                   child: Text(
                     Get.find<AuthService>().user.value.name![0],
-                    style: Theme.of(context).textTheme.displayLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.tertiary,
-                        ),
+                    style: Get.theme.textTheme.displayLarge!.copyWith(
+                      color: Get.theme.colorScheme.tertiary,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 10),
@@ -45,10 +43,9 @@ class ProfileView extends GetView<ProfileController> {
                     children: [
                       Text(
                         Get.find<AuthService>().user.value.name!,
-                        style:
-                            Theme.of(context).textTheme.headlineLarge!.copyWith(
-                                  color: Theme.of(context).colorScheme.tertiary,
-                                ),
+                        style: Get.theme.textTheme.headlineLarge!.copyWith(
+                          color: Get.theme.colorScheme.tertiary,
+                        ),
                       ),
                       const SizedBox(width: 10),
                       controller.isEditing.value
@@ -64,7 +61,7 @@ class ProfileView extends GetView<ProfileController> {
                                 controller.toggleEdit();
                               },
                               icon: const Icon(Icons.edit),
-                              color: Theme.of(context).colorScheme.secondary,
+                              color: Get.theme.colorScheme.secondary,
                             ),
                     ],
                   ),
@@ -73,19 +70,19 @@ class ProfileView extends GetView<ProfileController> {
                 Center(
                   child: Text(
                     Get.find<AuthService>().user.value.email!,
-                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          color: Theme.of(context).colorScheme.tertiary,
-                        ),
+                    style: Get.theme.textTheme.bodyLarge!.copyWith(
+                      color: Get.theme.colorScheme.tertiary,
+                    ),
                   ),
                 ),
                 const SizedBox(height: 30),
                 UiTextFormFieldWidget(
                   controller: controller.name,
                   label: "Name",
-                  textColor: Theme.of(context).colorScheme.tertiary,
+                  textColor: Get.theme.colorScheme.tertiary,
                   bgColor: controller.isEditing.value
-                      ? Theme.of(context).colorScheme.secondary
-                      : Theme.of(context).colorScheme.tertiary,
+                      ? Get.theme.colorScheme.secondary
+                      : Get.theme.colorScheme.tertiary,
                   icon: Icons.account_circle,
                   isEditable: controller.isEditing.value,
                 ),
@@ -93,10 +90,10 @@ class ProfileView extends GetView<ProfileController> {
                 UiTextFormFieldWidget(
                   controller: controller.bio,
                   label: "Brief Bio",
-                  textColor: Theme.of(context).colorScheme.tertiary,
+                  textColor: Get.theme.colorScheme.tertiary,
                   bgColor: controller.isEditing.value
-                      ? Theme.of(context).colorScheme.secondary
-                      : Theme.of(context).colorScheme.tertiary,
+                      ? Get.theme.colorScheme.secondary
+                      : Get.theme.colorScheme.tertiary,
                   icon: Icons.star,
                   isEditable: controller.isEditing.value,
                 ),
@@ -104,10 +101,10 @@ class ProfileView extends GetView<ProfileController> {
                 UiTextFormFieldWidget(
                   controller: controller.github,
                   label: "GitHub",
-                  textColor: Theme.of(context).colorScheme.tertiary,
+                  textColor: Get.theme.colorScheme.tertiary,
                   bgColor: controller.isEditing.value
-                      ? Theme.of(context).colorScheme.secondary
-                      : Theme.of(context).colorScheme.tertiary,
+                      ? Get.theme.colorScheme.secondary
+                      : Get.theme.colorScheme.tertiary,
                   icon: Icons.link,
                   isEditable: controller.isEditing.value,
                 ),
@@ -115,10 +112,10 @@ class ProfileView extends GetView<ProfileController> {
                 UiTextFormFieldWidget(
                   controller: controller.linkedin,
                   label: "LinkedIn",
-                  textColor: Theme.of(context).colorScheme.tertiary,
+                  textColor: Get.theme.colorScheme.tertiary,
                   bgColor: controller.isEditing.value
-                      ? Theme.of(context).colorScheme.secondary
-                      : Theme.of(context).colorScheme.tertiary,
+                      ? Get.theme.colorScheme.secondary
+                      : Get.theme.colorScheme.tertiary,
                   icon: Icons.link,
                   isEditable: controller.isEditing.value,
                 ),
@@ -139,18 +136,8 @@ class ProfileView extends GetView<ProfileController> {
                             text: "Save",
                             width: MediaQuery.of(context).size.width * .3,
                             height: 50,
-                            onTap: () async {
-                              FocusScope.of(context).unfocus();
-                              UserModel currentUser =
-                                  Get.find<AuthService>().user.value;
-
-                              currentUser.name = controller.name.text;
-                              currentUser.bio = controller.bio.text;
-                              currentUser.github = controller.github.text;
-                              currentUser.linkedin = controller.linkedin.text;
-
-                              await Get.find<AuthService>().updateUser();
-                              Get.offAllNamed(Routes.HOME);
+                            onTap: () {
+                              controller.updateUserProfile();
                             },
                           ),
                         ],
@@ -162,26 +149,26 @@ class ProfileView extends GetView<ProfileController> {
                   width: 1,
                   height: 50,
                   onTap: () {
-                    Get.find<AuthService>().signOut();
+                    controller.signOut();
                   },
                 ),
                 const SizedBox(height: 70),
                 Text(
                   "Delete this account ?",
-                  style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                        color: Colors.red,
-                      ),
+                  style: Get.theme.textTheme.headlineSmall!.copyWith(
+                    color: Colors.red,
+                  ),
                 ),
                 Text(
                   "Once you delete an account, there's no going back. All your task records will be deleted as well!",
-                  style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                        color: Theme.of(context).colorScheme.tertiary,
-                      ),
+                  style: Get.theme.textTheme.bodyMedium!.copyWith(
+                    color: Get.theme.colorScheme.tertiary,
+                  ),
                 ),
                 const SizedBox(height: 10),
                 InkWell(
                   onTap: () {
-                    Get.find<AuthService>().deleteUser();
+                    controller.deleteUser();
                   },
                   child: SizedBox(
                     height: 50,
@@ -191,12 +178,9 @@ class ProfileView extends GetView<ProfileController> {
                       child: Center(
                         child: Text(
                           "Delete",
-                          style: Theme.of(context)
-                              .textTheme
-                              .headlineSmall!
-                              .copyWith(
-                                color: Theme.of(context).colorScheme.tertiary,
-                              ),
+                          style: Get.theme.textTheme.headlineSmall!.copyWith(
+                            color: Get.theme.colorScheme.tertiary,
+                          ),
                         ),
                       ),
                     ),

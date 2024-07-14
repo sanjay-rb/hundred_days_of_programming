@@ -32,6 +32,7 @@ class ThemeService {
       textTheme: GoogleFonts.signikaNegativeTextTheme(
         Theme.of(context).textTheme,
       ),
+      appBarTheme: AppBarTheme(titleTextStyle: TextStyle(color: black)),
     );
     return lightTheme;
   }
@@ -51,6 +52,7 @@ class ThemeService {
       textTheme: GoogleFonts.signikaNegativeTextTheme(
         Theme.of(context).textTheme,
       ),
+      appBarTheme: AppBarTheme(titleTextStyle: TextStyle(color: white)),
     );
     return darkTheme;
   }
