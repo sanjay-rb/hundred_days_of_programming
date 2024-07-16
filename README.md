@@ -16,6 +16,7 @@ This app is designed for beginners eager to learn programming through a 100-day 
 - [Installation](#installation)
 - [Authors](#authors)
 - [License](#license)
+- [Privacy Policy](#privacy-policy)
 - [Releases](#releases)
 
 ## Installation
@@ -27,6 +28,10 @@ Designed, developed, and published by [Sanjay RB](https://sanjay-rb.github.io)
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Privacy Policy
+
+For details regarding our privacy practices, please refer to our Privacy Policy available [PRIVACY_POLICY.md](PRIVACY_POLICY.md).
 
 ## Releases
 
