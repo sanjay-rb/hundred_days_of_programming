@@ -16,6 +16,7 @@ This app is designed for beginners eager to learn programming through a 100-day 
 - [Installation](#installation)
 - [Authors](#authors)
 - [License](#license)
+- [Privacy Policy](#privacy-policy)
 - [Releases](#releases)
 
 ## Installation
