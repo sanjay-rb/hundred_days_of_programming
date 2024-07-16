@@ -28,6 +28,10 @@ Designed, developed, and published by [Sanjay RB](https://sanjay-rb.github.io)
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Privacy Policy
+
+For details regarding our privacy practices, please refer to our Privacy Policy available [PRIVACY_POLICY.md](PRIVACY_POLICY.md).
+
 ## Releases
 
 ### Version: 1.0.0+1
