@@ -36,7 +36,8 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width,
-                    height: MediaQuery.of(context).size.height * .35,
+                    height: MediaQuery.of(context).size.height *
+                        (Get.size.width >= 600 ? .5 : .35),
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Column(

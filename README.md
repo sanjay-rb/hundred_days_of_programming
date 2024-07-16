@@ -30,5 +30,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Releases
 
-### Version : 1.0.0+1
-- Initial Rollout
+### Version: 1.0.0+1
+- 100 days, 100 unique programs to code in any language of your choice. 🖥️
+- This app offers both light and dark mode themes. 🌞🌜
+- Personalized tracking of task completion with submissions via GitHub and LinkedIn posts. 📊
+- Maintain your streak and stand out. 🌟
+- By sharing task completions, you can network on LinkedIn and document your progress on GitHub. 🤝📚
