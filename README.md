@@ -1,7 +1,6 @@
 # 100 Days of Programming
 
 ## Description
-
 This app is designed for beginners eager to learn programming through a 100-day coding challenge. It offers 100 problem statements, ranging from very basic to intermediate levels. Users will solve these problems, submit their solutions on GitHub and LinkedIn, and provide the URLs in the app for verification. Once verified, the tasks will be marked as complete.
 
 ## Badges
@@ -26,15 +25,20 @@ Yet to be rollout
 Designed, developed, and published by [Sanjay RB](https://sanjay-rb.github.io)
 
 ## License
-
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Privacy Policy
-
 For details regarding our privacy practices, please refer to our Privacy Policy available [PRIVACY_POLICY.md](PRIVACY_POLICY.md).
 
-## Releases
+## Screenshots
+### Mobile
+<img src="images/mobile1.png" width=200> <img src="images/mobile2.png" width=200>  <img src="images/mobile3.png" width=200>  <img src="images/mobile4.png" width=200>
 
+### Tablet
+<img src="images/tab1.png" width=400> <img src="images/tab2.png" width=400> 
+<img src="images/tab3.png" width=400> <img src="images/tab4.png" width=400>
+
+## Releases
 ### Version: 1.0.0+1
 - 100 days, 100 unique programs to code in any language of your choice. 🖥️
 - This app offers both light and dark mode themes. 🌞🌜
