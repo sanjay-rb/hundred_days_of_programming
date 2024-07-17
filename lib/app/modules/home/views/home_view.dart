@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
 import 'package:hundred_days_of_programming/app/modules/home/views/task_search_delegate.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
+import 'package:hundred_days_of_programming/app/services/assets_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_bar_widget.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_button_widget.dart';
@@ -209,12 +210,10 @@ class HomeView extends GetView<HomeController> {
                                               width: 50,
                                               height: 50,
                                               child: Get.isDarkMode
-                                                  ? Image.asset(
-                                                      'assets/image/cold_streak.png',
-                                                    )
-                                                  : Image.asset(
-                                                      'assets/image/hot_streak.png',
-                                                    ),
+                                                  ? Image.asset(Assets
+                                                      .assetsImageColdStreak)
+                                                  : Image.asset(Assets
+                                                      .assetsImageHotStreak),
                                             ),
                                           ],
                                         ),

@@ -84,25 +84,18 @@ class AuthService extends GetxService {
     try {
       User? currentUser = FirebaseAuth.instance.currentUser;
       if (currentUser != null) {
-        user.value = await UserModel.getUser(currentUser.uid);
-        currentUser.delete().then(
-          (value) {
-            user.value.deleteUser().then(
-              (value) {
-                Get.offAllNamed(Routes.LOGIN);
-                LoggerService.info("User Deleted Successfully!");
-              },
-            ).onError(
-              (error, stackTrace) {
-                LoggerService.error(error.toString());
-              },
-            );
-          },
-        ).onError(
-          (error, stackTrace) {
+        UserModel user = await UserModel.getUser(currentUser.uid);
+        user.deleteUser().then((value) {
+          currentUser.delete().then((value) {
+            Get.offAllNamed(Routes.LOGIN);
+            LoggerService.info("User Deleted Successfully!");
+          }).onError((error, stackTrace) {
+            user.addUser();
             LoggerService.error(error.toString());
-          },
-        );
+          });
+        }).onError((error, stackTrace) {
+          LoggerService.error(error.toString());
+        });
       }
     } catch (e) {
       LoggerService.error(e.toString());

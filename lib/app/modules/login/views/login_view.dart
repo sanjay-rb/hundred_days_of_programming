@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/app/modules/login/controllers/login_controller.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
+import 'package:hundred_days_of_programming/app/services/assets_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_button_widget.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_text_form_field_widget.dart';
@@ -50,7 +51,7 @@ class LoginView extends GetView<LoginController> {
                                                   .width *
                                               .15,
                                           child: Image.asset(
-                                              'assets/icon/icon.png'),
+                                              Assets.assetsImageIcon),
                                         ),
                                       ),
                                       Obx(
