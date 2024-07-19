@@ -5,8 +5,6 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 class AdmobService extends GetxService {
   BannerAd? bannerAd;
-  Rx<bool> isLoaded = false.obs;
-  List<String> adUnitIds = dotenv.env['ANDROID_BANNER_AD_ID']!.split(',');
 
   /// Loads a banner ad.
   Future<Widget> loadAD() async {
