@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
 import 'package:hundred_days_of_programming/app/modules/home/views/task_search_delegate.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
+import 'package:hundred_days_of_programming/app/services/admob_service.dart';
 import 'package:hundred_days_of_programming/app/services/assets_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_bar_widget.dart';
@@ -314,18 +315,19 @@ class HomeView extends GetView<HomeController> {
         ),
       ),
       bottomNavigationBar: FutureBuilder<Widget>(
-          future: controller.loadAD(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const SizedBox(
-                width: 320,
-                height: 50,
-                child: Center(child: Text("Advertisements")),
-              );
-            } else {
-              return snapshot.data!;
-            }
-          }),
+        future: Get.find<AdmobService>().loadAD(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const SizedBox(
+              width: 320,
+              height: 50,
+              child: Center(child: Text("Advertisements")),
+            );
+          } else {
+            return snapshot.data!;
+          }
+        },
+      ),
     );
   }
 }

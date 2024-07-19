@@ -9,8 +9,10 @@ class AdmobService extends GetxService {
   List<String> adUnitIds = dotenv.env['ANDROID_BANNER_AD_ID']!.split(',');
 
   /// Loads a banner ad.
-  void loadAd() {
+  Future<Widget> loadAD() async {
+    List<String> adUnitIds = dotenv.env['ANDROID_BANNER_AD_ID']!.split(',');
     adUnitIds.shuffle();
+
     bannerAd = BannerAd(
       adUnitId: adUnitIds.first,
       request: const AdRequest(),
@@ -19,7 +21,6 @@ class AdmobService extends GetxService {
         // Called when an ad is successfully received.
         onAdLoaded: (ad) {
           debugPrint('BannerAd loaded successfully : ${ad.adUnitId}');
-          isLoaded.value = true;
         },
         // Called when an ad request failed.
         onAdFailedToLoad: (ad, err) {
@@ -27,14 +28,15 @@ class AdmobService extends GetxService {
           // Dispose the ad here to free resources.
           ad.dispose();
         },
-        onAdClosed: (ad) {
-          isLoaded.value = false;
-        },
-        onAdOpened: (ad) {
-          isLoaded.value = true;
-        },
       ),
-    )..load();
+    );
+    await bannerAd?.load();
+    return SizedBox(
+      key: UniqueKey(),
+      width: bannerAd?.size.width.toDouble(),
+      height: bannerAd?.size.height.toDouble(),
+      child: AdWidget(ad: bannerAd!, key: UniqueKey()),
+    );
   }
 
   Future<void> closeAd() async {
