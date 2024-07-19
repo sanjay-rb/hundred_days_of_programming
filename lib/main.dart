@@ -10,6 +10,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
 import 'package:hundred_days_of_programming/app/services/admob_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
+import 'package:hundred_days_of_programming/app/services/in_app_update_service.dart';
 import 'package:hundred_days_of_programming/app/services/theme_service.dart';
 import 'package:hundred_days_of_programming/firebase_options.dart';
 
@@ -41,6 +42,7 @@ Future<void> main() async {
   //* Init auth
   await Get.putAsync(() async => AuthService());
   await Get.putAsync(() async => AdmobService());
+  await Get.putAsync(() async => InAppUpdateService());
 
   runApp(const MainApp());
 }

@@ -27,7 +27,17 @@ class AdmobService extends GetxService {
           // Dispose the ad here to free resources.
           ad.dispose();
         },
+        onAdClosed: (ad) {
+          isLoaded.value = false;
+        },
+        onAdOpened: (ad) {
+          isLoaded.value = true;
+        },
       ),
     )..load();
+  }
+
+  Future<void> closeAd() async {
+    await bannerAd?.dispose();
   }
 }

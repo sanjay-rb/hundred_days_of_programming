@@ -2,11 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
 import 'package:hundred_days_of_programming/app/modules/home/views/task_search_delegate.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
-import 'package:hundred_days_of_programming/app/services/admob_service.dart';
 import 'package:hundred_days_of_programming/app/services/assets_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_bar_widget.dart';
@@ -315,24 +313,19 @@ class HomeView extends GetView<HomeController> {
           ),
         ),
       ),
-      bottomNavigationBar: Obx(
-        () => SafeArea(
-          child: (Get.find<AdmobService>().isLoaded.value &&
-                  Get.find<AdmobService>().bannerAd != null)
-              ? SizedBox(
-                  width:
-                      Get.find<AdmobService>().bannerAd?.size.width.toDouble(),
-                  height:
-                      Get.find<AdmobService>().bannerAd?.size.height.toDouble(),
-                  child: AdWidget(ad: Get.find<AdmobService>().bannerAd!),
-                )
-              : const SizedBox(
-                  width: 320,
-                  height: 50,
-                  child: Center(child: Text("Advertisements")),
-                ),
-        ),
-      ),
+      bottomNavigationBar: FutureBuilder<Widget>(
+          future: controller.loadAD(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return const SizedBox(
+                width: 320,
+                height: 50,
+                child: Center(child: Text("Advertisements")),
+              );
+            } else {
+              return snapshot.data!;
+            }
+          }),
     );
   }
 }
