@@ -6,7 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'package:get/get.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
+import 'package:hundred_days_of_programming/app/services/admob_service.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/services/theme_service.dart';
 import 'package:hundred_days_of_programming/firebase_options.dart';
@@ -33,8 +35,12 @@ Future<void> main() async {
     return true;
   };
 
+  //* init MobileAds
+  MobileAds.instance.initialize();
+
   //* Init auth
   await Get.putAsync(() async => AuthService());
+  await Get.putAsync(() async => AdmobService());
 
   runApp(const MainApp());
 }
