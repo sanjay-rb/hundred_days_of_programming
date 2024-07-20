@@ -21,6 +21,9 @@ class LoginController extends GetxController {
   }
 
   changeIsLogin() {
+    name.text = "";
+    email.text = "";
+    password.text = "";
     isLogin.value = !isLogin.value;
   }
 

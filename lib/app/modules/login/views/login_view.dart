@@ -107,48 +107,55 @@ class LoginView extends GetView<LoginController> {
                                         isPassword: true,
                                       ),
                                       const SizedBox(height: 25),
-                                      UiButtonWidget(
-                                        text: controller.isLogin.value
-                                            ? 'Sign In'
-                                            : 'Sign Up',
-                                        width:
-                                            MediaQuery.of(context).size.width *
-                                                .40,
-                                        height: 40,
-                                        onTap: () {
-                                          controller.signInOrUp();
-                                        },
+                                      Obx(
+                                        () => UiButtonWidget(
+                                          text: controller.isLogin.value
+                                              ? 'Sign In'
+                                              : 'Sign Up',
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              .40,
+                                          height: 40,
+                                          onTap: () {
+                                            controller.signInOrUp();
+                                          },
+                                        ),
                                       ),
                                       const SizedBox(height: 25),
                                       InkWell(
                                         onTap: () {
                                           controller.changeIsLogin();
                                         },
-                                        child: RichText(
-                                          text: TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                  text:
-                                                      '${controller.isLogin.value ? 'New to' : 'Already on'} "100 Days of Programming"? '),
-                                              TextSpan(
-                                                text: controller.isLogin.value
-                                                    ? ' Sign Up'
-                                                    : ' Sign In',
-                                                style: Get
-                                                    .theme.textTheme.bodyLarge!
-                                                    .copyWith(
-                                                  color: Get.theme.colorScheme
-                                                      .secondary,
-                                                  letterSpacing: 3,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                            ],
-                                            style: Get
-                                                .theme.textTheme.labelLarge!
-                                                .copyWith(
+                                        child: Obx(
+                                          () => RichText(
+                                            text: TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                    text:
+                                                        '${controller.isLogin.value ? 'New to' : 'Already on'} "100 Days of Programming"? '),
+                                                TextSpan(
+                                                  text: controller.isLogin.value
+                                                      ? ' Sign Up'
+                                                      : ' Sign In',
+                                                  style: Get.theme.textTheme
+                                                      .bodyLarge!
+                                                      .copyWith(
                                                     color: Get.theme.colorScheme
-                                                        .tertiary),
+                                                        .secondary,
+                                                    letterSpacing: 3,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                ),
+                                              ],
+                                              style: Get
+                                                  .theme.textTheme.labelLarge!
+                                                  .copyWith(
+                                                      color: Get
+                                                          .theme
+                                                          .colorScheme
+                                                          .tertiary),
+                                            ),
                                           ),
                                         ),
                                       )
