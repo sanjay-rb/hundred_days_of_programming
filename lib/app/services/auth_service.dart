@@ -90,14 +90,17 @@ class AuthService extends GetxService {
             Get.offAllNamed(Routes.LOGIN);
             LoggerService.info("User Deleted Successfully!");
           }).onError((error, stackTrace) {
+            Get.back(closeOverlays: true);
             user.addUser();
             LoggerService.error(error.toString());
           });
         }).onError((error, stackTrace) {
+          Get.back(closeOverlays: true);
           LoggerService.error(error.toString());
         });
       }
     } catch (e) {
+      Get.back(closeOverlays: true);
       LoggerService.error(e.toString());
     }
   }

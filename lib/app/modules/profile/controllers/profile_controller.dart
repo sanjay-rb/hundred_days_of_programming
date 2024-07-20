@@ -77,12 +77,7 @@ class ProfileController extends GetxController {
         ),
       ),
     );
-    try {
-      await Get.find<AuthService>().deleteUser();
-    } catch (e) {
-      Get.back(closeOverlays: true);
-      LoggerService.error(e.toString());
-    }
+    await Get.find<AuthService>().deleteUser();
   }
 
   void toggleEdit() {
