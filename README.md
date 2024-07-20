@@ -1,7 +1,7 @@
 # 100 Days of Programming
 
 ## Description
-This app is designed for beginners eager to learn programming through a 100-day coding challenge. It offers 100 problem statements, ranging from very basic to intermediate levels. Users will solve these problems, submit their solutions on GitHub and LinkedIn, and provide the URLs in the app for verification. Once verified, the tasks will be marked as complete.
+Code 100 unique programs in any language over 100 days, track your progress with light/dark mode themes, and share your journey on GitHub and LinkedIn to maintain your streak and network with others! 🌞🌜📊🌟🤝📚
 
 ## Badges
 [![Static Badge](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat&logo=github)](NOTICE)
@@ -13,6 +13,7 @@ This app is designed for beginners eager to learn programming through a 100-day 
 
 ## Table of Contents
 - [Installation](#installation)
+- [Specifications](#specifications)
 - [Authors](#authors)
 - [License](#license)
 - [Privacy Policy](#privacy-policy)
@@ -20,6 +21,13 @@ This app is designed for beginners eager to learn programming through a 100-day 
 
 ## Installation
 Kindly refer to the following Google Play Store URL for app installation: [100 Days of Programming](https://play.google.com/store/apps/details?id=com.sanjoke.hundred_days_of_programming)
+
+## Specifications
+- 100 days, 100 unique programs to code in any language of your choice. 🖥️
+- This app offers both light and dark mode themes. 🌞🌜
+- Personalized tracking of task completion with submissions via GitHub and LinkedIn posts. 📊
+- Maintain your streak and stand out. 🌟
+- By sharing task completions, you can network on LinkedIn and document your progress on GitHub. 🤝📚
 
 ## Authors
 Designed, developed, and published by [Sanjay RB](https://sanjay-rb.github.io)
@@ -40,18 +48,15 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 
 ## Releases
 ### Version: 1.0.0+1
-- 100 days, 100 unique programs to code in any language of your choice. 🖥️
-- This app offers both light and dark mode themes. 🌞🌜
-- Personalized tracking of task completion with submissions via GitHub and LinkedIn posts. 📊
-- Maintain your streak and stand out. 🌟
-- By sharing task completions, you can network on LinkedIn and document your progress on GitHub. 🤝📚
+- **Major**: Initial release. 🎉
 
 ### Version: 1.3.2+2
-- **Major**: Implemented in-app update functionality. 🚀
-- **Bugfix**: Resolved authentication issues. 🛠️
-- **Bugfix**: Delete user issues. 🛠️
-- **Major**: Integrated assets service. 📂
-- **Major**: Added privacy policy. 🔒
+- **Minor**: Implemented in-app update functionality. 🚀
+- **Minor**: Added privacy policy. 🔒
+- **Minor**: Integrated assets service. 📂
+- **Patch**: Resolved authentication issues. 🛠️
+- **Patch**: Delete user issues. 🛠️
 
-### Version: 1.3.3+3
-- **Major**: Added App Check 🔒
+### Version: 1.4.0+3
+- **Minor**: Added App Check functionality. ✅
+- **Patch**: Fixed state management issues on the login page. 🔧
