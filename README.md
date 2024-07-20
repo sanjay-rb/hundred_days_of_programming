@@ -52,3 +52,6 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 - **Bugfix**: Delete user issues. 🛠️
 - **Major**: Integrated assets service. 📂
 - **Major**: Added privacy policy. 🔒
+
+### Version: 1.3.3+3
+- **Major**: Added App Check 🔒
