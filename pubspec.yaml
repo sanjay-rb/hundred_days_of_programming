@@ -1,5 +1,5 @@
 name: hundred_days_of_programming
-version: 1.0.0+1
+version: 1.3.1+2
 publish_to: none
 description: This app is designed for beginners eager to learn programming through a 100-day coding challenge. It offers 100 problem statements, ranging from very basic to intermediate levels. Users will solve these problems, submit their solutions on GitHub and LinkedIn, and provide the URLs in the app for verification. Once verified, the tasks will be marked as complete.
 environment: 
@@ -20,6 +20,7 @@ dependencies:
   url_launcher: 6.3.0
   google_mobile_ads: 5.1.0
   package_info: 2.0.2
+  http: 1.2.2
   flutter: 
     sdk: flutter
 

@@ -19,7 +19,7 @@ This app is designed for beginners eager to learn programming through a 100-day 
 - [Releases](#releases)
 
 ## Installation
-Yet to be rollout
+Kindly refer to the following Google Play Store URL for app installation: [100 Days of Programming](https://play.google.com/store/apps/details?id=com.sanjoke.hundred_days_of_programming)
 
 ## Authors
 Designed, developed, and published by [Sanjay RB](https://sanjay-rb.github.io)
@@ -45,3 +45,9 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 - Personalized tracking of task completion with submissions via GitHub and LinkedIn posts. 📊
 - Maintain your streak and stand out. 🌟
 - By sharing task completions, you can network on LinkedIn and document your progress on GitHub. 🤝📚
+
+### Version: 1.3.1+2
+- **Major**: Implemented in-app update functionality. 🚀
+- **Bugfix**: Resolved authentication issues. 🛠️
+- **Major**: Integrated assets service. 📂
+- **Major**: Added privacy policy. 🔒
