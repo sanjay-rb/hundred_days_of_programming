@@ -46,8 +46,9 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 - Maintain your streak and stand out. 🌟
 - By sharing task completions, you can network on LinkedIn and document your progress on GitHub. 🤝📚
 
-### Version: 1.3.1+2
+### Version: 1.3.2+2
 - **Major**: Implemented in-app update functionality. 🚀
 - **Bugfix**: Resolved authentication issues. 🛠️
+- **Bugfix**: Delete user issues. 🛠️
 - **Major**: Integrated assets service. 📂
 - **Major**: Added privacy policy. 🔒
