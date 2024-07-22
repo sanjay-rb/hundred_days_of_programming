@@ -60,3 +60,6 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 ### Version: 1.4.0+3
 - **Minor**: Added App Check functionality. ✅
 - **Patch**: Fixed state management issues on the login page. 🔧
+
+### Version: 1.4.1+3
+- **Patch**: Un dismissable Loader 🔄

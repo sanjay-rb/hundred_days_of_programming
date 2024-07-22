@@ -95,6 +95,7 @@ class TaskController extends GetxController {
             color: Get.theme.colorScheme.secondary,
           ),
         ),
+        barrierDismissible: false,
       );
 
       try {
