@@ -21,6 +21,9 @@ def update_streak(event: scheduler_fn.ScheduledEvent) -> None:
         # Getting referance of user document
         user_ref = user.reference
         user_data = user.to_dict()
+        name = user_data.get('name', 'Unknow User')
+        email = user_data.get('email', 'Unknow EmailID')
+        print(f"Current User: {name} {email}")
 
         # Reading current value
         last_submitted_date = user_data.get(
@@ -32,18 +35,27 @@ def update_streak(event: scheduler_fn.ScheduledEvent) -> None:
         last_submitted_date = datetime.fromtimestamp(
             last_submitted_date.timestamp())
 
+        print(f"Current Streak Value {streak}")
+        print(f"Current Streak Value {max_streak}")
+
         # Streak updation
         day_diff = (current_date - last_submitted_date).days
         if day_diff == 1:
+            print("Adding value 1 to current streak.")
             new_streak = streak + 1
         elif day_diff > 1:
+            print("Resetting streak value to 0.")
             new_streak = 0
         else:
+            print("No change in streak.")
             new_streak = streak
 
         # Max streak updation
         if new_streak > max_streak:
             max_streak = new_streak
+
+        print(f"Updated Streak Value {new_streak}")
+        print(f"Updated Streak Value {max_streak}")
 
         # Updation on firestore
         user_ref.update({'streak': new_streak, 'maxStreak': max_streak})
