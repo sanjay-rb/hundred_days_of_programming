@@ -29,6 +29,7 @@ class ProfileController extends GetxController {
           color: Get.theme.colorScheme.secondary,
         ),
       ),
+      barrierDismissible: false,
     );
     try {
       UserModel currentUser = Get.find<AuthService>().user.value;
@@ -60,6 +61,7 @@ class ProfileController extends GetxController {
           color: Get.theme.colorScheme.secondary,
         ),
       ),
+      barrierDismissible: false,
     );
     try {
       await Get.find<AuthService>().signOut();
@@ -76,6 +78,7 @@ class ProfileController extends GetxController {
           color: Get.theme.colorScheme.secondary,
         ),
       ),
+      barrierDismissible: false,
     );
     await Get.find<AuthService>().deleteUser();
   }
