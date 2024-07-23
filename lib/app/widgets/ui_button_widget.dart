@@ -25,12 +25,15 @@ class UiButtonWidget extends StatelessWidget {
         child: Material(
           color: Theme.of(context).colorScheme.secondary,
           borderRadius: BorderRadius.circular(8),
-          child: Center(
-            child: Text(
-              text,
-              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                    color: Theme.of(context).colorScheme.primary,
-                  ),
+          child: FittedBox(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+              ),
             ),
           ),
         ),
