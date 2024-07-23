@@ -195,7 +195,7 @@ class TaskView extends GetView<TaskController> {
                                             'github',
                                           );
                                         },
-                                        label: "GitHub Link",
+                                        label: "Task GitHub Link",
                                         textColor: Theme.of(context)
                                             .colorScheme
                                             .tertiary,
@@ -217,7 +217,7 @@ class TaskView extends GetView<TaskController> {
                                             'linkedin',
                                           );
                                         },
-                                        label: "LinkedIn Link",
+                                        label: "Task LinkedIn Post",
                                         textColor: Theme.of(context)
                                             .colorScheme
                                             .tertiary,
