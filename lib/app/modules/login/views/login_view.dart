@@ -51,32 +51,33 @@ class LoginView extends GetView<LoginController> {
                                                   .width *
                                               .15,
                                           child: Image.asset(
-                                              Assets.assetsImageIcon),
+                                            Assets.assetsImageIcon,
+                                          ),
                                         ),
                                       ),
-                                      Obx(
-                                        () => controller.isLogin.value
-                                            ? const SizedBox()
-                                            : const SizedBox(height: 25),
-                                      ),
-                                      Obx(
-                                        () => controller.isLogin.value
-                                            ? const SizedBox()
-                                            : UiTextFormFieldWidget(
-                                                controller: controller.name,
-                                                validator: (value) {
-                                                  return controller
-                                                      .validateFormFields(
-                                                          value);
-                                                },
-                                                label: "Name",
-                                                bgColor: Get.theme.colorScheme
-                                                    .secondary,
-                                                textColor: Get
-                                                    .theme.colorScheme.tertiary,
-                                                icon: Icons.account_circle,
-                                              ),
-                                      ),
+                                      Obx(() => controller
+                                                  .currentAuthType.value ==
+                                              AuthType.signUp
+                                          ? Column(
+                                              children: [
+                                                const SizedBox(height: 25),
+                                                UiTextFormFieldWidget(
+                                                  controller: controller.name,
+                                                  validator: (value) {
+                                                    return controller
+                                                        .validateFormFields(
+                                                            value);
+                                                  },
+                                                  label: "Name",
+                                                  bgColor: Get.theme.colorScheme
+                                                      .secondary,
+                                                  textColor: Get.theme
+                                                      .colorScheme.tertiary,
+                                                  icon: Icons.account_circle,
+                                                ),
+                                              ],
+                                            )
+                                          : const SizedBox()),
                                       const SizedBox(height: 25),
                                       UiTextFormFieldWidget(
                                         controller: controller.email,
@@ -91,74 +92,367 @@ class LoginView extends GetView<LoginController> {
                                             Get.theme.colorScheme.tertiary,
                                         icon: Icons.email,
                                       ),
-                                      const SizedBox(height: 25),
-                                      UiTextFormFieldWidget(
-                                        controller: controller.password,
-                                        validator: (value) {
-                                          return controller
-                                              .validateFormFields(value);
-                                        },
-                                        label: "Password",
-                                        bgColor:
-                                            Get.theme.colorScheme.secondary,
-                                        textColor:
-                                            Get.theme.colorScheme.tertiary,
-                                        icon: Icons.password,
-                                        isPassword: true,
+                                      Obx(
+                                        () => controller
+                                                    .currentAuthType.value ==
+                                                AuthType.resetPassword
+                                            ? const SizedBox()
+                                            : Column(
+                                                children: [
+                                                  const SizedBox(height: 25),
+                                                  UiTextFormFieldWidget(
+                                                    controller:
+                                                        controller.password,
+                                                    validator: (value) {
+                                                      return controller
+                                                          .validateFormFields(
+                                                              value);
+                                                    },
+                                                    label: "Password",
+                                                    bgColor: Get.theme
+                                                        .colorScheme.secondary,
+                                                    textColor: Get.theme
+                                                        .colorScheme.tertiary,
+                                                    icon: Icons.password,
+                                                    isPassword: true,
+                                                  ),
+                                                ],
+                                              ),
                                       ),
                                       const SizedBox(height: 25),
                                       Obx(
-                                        () => UiButtonWidget(
-                                          text: controller.isLogin.value
-                                              ? 'Sign In'
-                                              : 'Sign Up',
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width *
-                                              .40,
-                                          height: 40,
-                                          onTap: () {
-                                            controller.signInOrUp();
-                                          },
+                                        () => Column(
+                                          children: [
+                                            ...controller.currentAuthType
+                                                        .value ==
+                                                    AuthType.signIn
+                                                ? [
+                                                    UiButtonWidget(
+                                                      text: 'Sign In',
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              .40,
+                                                      height: 40,
+                                                      onTap: () {
+                                                        controller.signIn();
+                                                      },
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType.signUp,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'New to "100 Days of Programming"? '),
+                                                            TextSpan(
+                                                              text: ' Sign Up',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType
+                                                              .resetPassword,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'Forgot Password ? '),
+                                                            TextSpan(
+                                                              text: ' Reset',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    )
+                                                  ]
+                                                : [],
+                                            ...AuthType.signUp ==
+                                                    controller
+                                                        .currentAuthType.value
+                                                ? [
+                                                    UiButtonWidget(
+                                                      text: 'Sign Up',
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              .40,
+                                                      height: 40,
+                                                      onTap: () {
+                                                        controller.signUp();
+                                                      },
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType.signIn,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'Already on "100 Days of Programming"? '),
+                                                            TextSpan(
+                                                              text: ' Sign In',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType
+                                                              .resetPassword,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'Forgot Password ? '),
+                                                            TextSpan(
+                                                              text: ' Reset',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    )
+                                                  ]
+                                                : [],
+                                            ...controller.currentAuthType
+                                                        .value ==
+                                                    AuthType.resetPassword
+                                                ? [
+                                                    UiButtonWidget(
+                                                      text: 'Reset',
+                                                      width:
+                                                          MediaQuery.of(context)
+                                                                  .size
+                                                                  .width *
+                                                              .40,
+                                                      height: 40,
+                                                      onTap: () {
+                                                        controller
+                                                            .resetPassword();
+                                                      },
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType.signIn,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'Already on "100 Days of Programming"? '),
+                                                            TextSpan(
+                                                              text: ' Sign In',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    const SizedBox(height: 25),
+                                                    InkWell(
+                                                      onTap: () {
+                                                        controller
+                                                            .changeAuthTypeTo(
+                                                          AuthType.signUp,
+                                                        );
+                                                      },
+                                                      child: RichText(
+                                                        text: TextSpan(
+                                                          children: [
+                                                            const TextSpan(
+                                                                text:
+                                                                    'New to "100 Days of Programming"? '),
+                                                            TextSpan(
+                                                              text: ' Sign Up',
+                                                              style: Get
+                                                                  .theme
+                                                                  .textTheme
+                                                                  .bodyLarge!
+                                                                  .copyWith(
+                                                                color: Get
+                                                                    .theme
+                                                                    .colorScheme
+                                                                    .secondary,
+                                                                letterSpacing:
+                                                                    3,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                          style: Get
+                                                              .theme
+                                                              .textTheme
+                                                              .labelLarge!
+                                                              .copyWith(
+                                                                  color: Get
+                                                                      .theme
+                                                                      .colorScheme
+                                                                      .tertiary),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ]
+                                                : [],
+                                          ],
                                         ),
                                       ),
-                                      const SizedBox(height: 25),
-                                      InkWell(
-                                        onTap: () {
-                                          controller.changeIsLogin();
-                                        },
-                                        child: Obx(
-                                          () => RichText(
-                                            text: TextSpan(
-                                              children: [
-                                                TextSpan(
-                                                    text:
-                                                        '${controller.isLogin.value ? 'New to' : 'Already on'} "100 Days of Programming"? '),
-                                                TextSpan(
-                                                  text: controller.isLogin.value
-                                                      ? ' Sign Up'
-                                                      : ' Sign In',
-                                                  style: Get.theme.textTheme
-                                                      .bodyLarge!
-                                                      .copyWith(
-                                                    color: Get.theme.colorScheme
-                                                        .secondary,
-                                                    letterSpacing: 3,
-                                                    fontWeight: FontWeight.bold,
-                                                  ),
-                                                ),
-                                              ],
-                                              style: Get
-                                                  .theme.textTheme.labelLarge!
-                                                  .copyWith(
-                                                      color: Get
-                                                          .theme
-                                                          .colorScheme
-                                                          .tertiary),
-                                            ),
-                                          ),
-                                        ),
-                                      )
                                     ],
                                   ),
                                 ),

@@ -29,7 +29,7 @@ class AuthService extends GetxService {
     return false;
   }
 
-  Future<String?> signUp(name, email, password) async {
+  Future<String?> signUp(String name, String email, String password) async {
     UserCredential? userCredential;
     try {
       userCredential =
@@ -42,15 +42,17 @@ class AuthService extends GetxService {
           userCredential.credential!,
         );
       }
+    } on FirebaseAuthException catch (e) {
+      return e.message;
     } catch (e) {
       return e.toString();
     }
     String id = userCredential.user!.uid;
     UserModel userModel = UserModel(
       id: id,
-      name: (name != null && name != "") ? name : "New User",
+      name: (name != "") ? name : "New User",
       bio: "",
-      email: email,
+      email: email.toLowerCase(),
       github: "",
       linkedin: "",
       maxStreak: 0,
@@ -72,6 +74,8 @@ class AuthService extends GetxService {
     try {
       userCredential = await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password);
+    } on FirebaseAuthException catch (e) {
+      return e.message;
     } catch (e) {
       return e.toString();
     }
@@ -99,10 +103,24 @@ class AuthService extends GetxService {
           LoggerService.error(error.toString());
         });
       }
+    } on FirebaseAuthException catch (e) {
+      Get.back(closeOverlays: true);
+      LoggerService.error(e.message.toString());
     } catch (e) {
       Get.back(closeOverlays: true);
       LoggerService.error(e.toString());
     }
+  }
+
+  Future<String?> resetPassword(String email) async {
+    try {
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+    } on FirebaseAuthException catch (e) {
+      return e.message;
+    } catch (e) {
+      return e.toString();
+    }
+    return null;
   }
 
   Future<void> signOut() async {
