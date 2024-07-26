@@ -167,6 +167,32 @@ class TaskView extends GetView<TaskController> {
                 ),
               ),
               const SizedBox(height: 20),
+              Center(
+                child: InkWell(
+                  onTap: () {},
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          const TextSpan(
+                              text: "Having trouble starting? Click here for "),
+                          TextSpan(
+                            text: "step-by-step guide!",
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.secondary,
+                            ),
+                          ),
+                        ],
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.tertiary,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
               completedTasks.any((element) => element.taskID == task.id)
                   ? const SizedBox()
                   : UiButtonWidget(
