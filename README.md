@@ -65,3 +65,6 @@ For details regarding our privacy practices, please refer to our Privacy Policy 
 - **Patch**: Un dismissable Loader 🔄
 - **Patch**: TaskView Dialog UI Change 🖼️
 - **Minor**: Added Reset Email Sent Feature 📧
+
+### Version: 1.6.0+5
+- **Minor**: Added "How to do" page 📄
