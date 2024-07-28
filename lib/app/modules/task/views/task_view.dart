@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hundred_days_of_programming/app/data/models/task_model.dart';
 import 'package:hundred_days_of_programming/app/data/models/user_model.dart';
+import 'package:hundred_days_of_programming/app/routes/app_pages.dart';
 import 'package:hundred_days_of_programming/app/services/auth_service.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_button_widget.dart';
 import 'package:hundred_days_of_programming/app/widgets/ui_text_form_field_widget.dart';
@@ -169,7 +170,9 @@ class TaskView extends GetView<TaskController> {
               const SizedBox(height: 20),
               Center(
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed(Routes.HOW);
+                  },
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: RichText(
@@ -181,6 +184,9 @@ class TaskView extends GetView<TaskController> {
                             text: "step-by-step guide!",
                             style: TextStyle(
                               color: Theme.of(context).colorScheme.secondary,
+                              decoration: TextDecoration.underline,
+                              decorationColor:
+                                  Theme.of(context).colorScheme.secondary,
                             ),
                           ),
                         ],
