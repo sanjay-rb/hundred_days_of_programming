@@ -3,6 +3,8 @@ import 'package:get/get.dart';
 import '../data/models/task_model.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/how/bindings/how_binding.dart';
+import '../modules/how/views/how_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -44,6 +46,11 @@ class AppPages {
       name: _Paths.TASK,
       page: () => TaskView(Get.arguments as TaskModel),
       binding: TaskBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOW,
+      page: () => const HowView(),
+      binding: HowBinding(),
     ),
   ];
 }
